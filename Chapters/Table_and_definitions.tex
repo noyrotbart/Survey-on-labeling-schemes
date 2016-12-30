@@ -53,8 +53,8 @@ A tree with $n=23$ nodes. Each node is assigned a label of size $2 \log n$ suppo
 This is a labeling scheme. It consists of an \emph{encoder} algorithm that labels the nodes of a tree and a \emph{decoder} algorithm that can answer \adjacency queries using only labels as input. Note that the encoding algorithm relies on knowing the entire tree, whereas the decoding algorithm only knows the labels it receives as input and nothing else. 
 
 Recall that the quality of a labeling scheme is measured by the size of the label it produces in the worst case.
-In the above example, the pair $(\Id(u),\Id(v))$ can be represented as a binary string of length $2\ceil{\log n}$.\footnote{From hereon, unless stated otherwise,  $\log n$ stands for $ \log_{2} n$, and $n$ is assumed to be a power of $2$.}
-\todo{Do we really want to assume that $n$ is a power of 2? In principle, you cannot know that such an algorithm works for non-powers of 2 (although it most often will).}
+In the above example, the pair $(\Id(u),\Id(v))$ can be represented as a binary string of length $2\ceil{\log n}$.\footnote{From hereon, unless stated otherwise,  $\log n$ stands for $ \log_{2} n$}% and $n$ is assumed to be a power of $2$.}
+%\todo{Do we really want to assume that $n$ is a power of 2? In principle, you cannot know that such an algorithm works for non-powers of 2 (although it most often will).}
 The  goal is to find an \emph{optimal} labeling scheme: that is, one where the worst-case label size is as small as theoretically possible.
 
 There are two main characteristics of a labeling scheme. First, there is the type of query for which the labeling scheme has been constructed. In our example, the type of query is ``\adjacency'', but it could also have been something else, for example ``\ancestry'' (is one node an ancestor of the other?) or ``\distance'' (what is the distance between  two nodes?). Second, there is the family of graphs under consideration. In our example, the labeling scheme is for the family of all trees, but both smaller and larger families would have been possible. A different choice of query or a different choice of graph family may lead to an entirely different labeling scheme with different properties and a different optimal worst-case label size. 
@@ -251,7 +251,7 @@ According to \citeN{Peleg05}, labeling schemes  assist in the design of ``memory
 In the remainder of the paper we use the following terms:
 			$k$ is a positive integer.
 			A binary string is a member of the set $\{ 0,1 \}^*$.
-			We denote $\ceil { \log_2{n}}$ by $\log{n}$.   \todo{Really? Maybe you mean that we \emph{define} $\log n$ to mean $\ceil{\log_2 n}$?}
+			We define $\ceil { \log_2{n}}$ as $\log{n}$.   %\todo{Really? Maybe you mean that we \emph{define} $\log n$ to mean $\ceil{\log_2 n}$?}
 			We denote by $\mathbb{N} = \{1,2 \dots \} $ the set of natural numbers and by $\mathbb{N}_0 = \{0,1,2 \dots \} $ the extended set that includes $0$.
 			For $x \in \mathbb{N}$ we denote by $\bin(x)$ its standard binary representation, and $\vert x \vert$ as the number of bits in $\bin(x)$. \todo{The latter seems like a really dangerous and weird definition. Then we have e.g. $\vert 4\vert=3$.}
 			The concatenation of two bit strings $a$ and $b$ is denoted $a \circ b$.
