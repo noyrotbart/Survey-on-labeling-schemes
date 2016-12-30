@@ -1,0 +1,59 @@
+% !TEX root = ../Survey.tex
+
+\paragraph{Bounded trees}\label{section:Limited}
+We complete the description of the following cases: $Caterpillars(n)$, $Trees(n,\delta)$, $Trees(n,\Delta)$, and  $BinaryTrees(n)$. 
+Note that the table is transposed compared to Table~\ref{table:main}.
+We chose to present the results in this fashion  since the  focus is  on the restricted families.
+In addition, only the main functions are addressed.
+\begin{table}[!ht]
+\label{table:bounded}
+
+\footnotesize
+\caption{Known upper and lower bounds for  labeling schemes on trees with unique encoder. $\Delta$ refers to maximum degree , $M$  to $2^M$ edge weights, and $\delta$  to depth.}
+\renewcommand\arraystretch{1.3}
+\renewcommand\tabcolsep{0pt}
+\makebox[\textwidth][c]{
+  \begin{tabular*}{17cm}{@{\extracolsep{\fill}}lcccccc}
+    \hline
+			   		&Adjacency 			   			 & Ancestry					 &Distance			 & NCA	  		& Sibling   \\ \hline
+    \hline
+			$Caterpillars(n)$: &&&&&&\\
+			Upper bound		&$\log n +$ 				   &$\log n +O(1)$ 			 &$2 (\log n + M) $					&$\log n + \log \log \Delta + O(1) $ 	 	&$\log n +$		\\
+							&$\Theta(1)$ \cite{Gavoille06}	  &[Theorem~\ref{thm:cat-anc}]	  &$[Theorem~\ref{thm:cat-dist}]$		&[Theorem~\ref{thm:unknown}]			& $O(\log \log n)$ \cite{Alstrup05}  \\	\hdashline	
+    			Lower bound		&$\log n + \Theta(1)$				  &	$\log n + \Theta(1)$		 &$\log n + \Theta(1)$			 	&	$\log n + \Theta(1)$					& $\log n +\Omega(\log \log n)$	\\ 
+							&						  &			 			 &								&					 			&[Corollary~\ref{Cor:lowerbounds}]\\ \hline 
+			
+			
+			
+			$BinaryTrees(n)$:&&&&&&\\
+			Upper bound		&$\log n +O(1)$ \cite{Gavoille06}	 &$\log n +$ 		     			    &$\frac{1}{2}\log^2 n +O(\log n)$~\cite{Gavoille2001}					&$ O(\log n)$\cite{Alstrup02NCA}		&$ \log n +\Theta(1)$  \\ 
+							&							&$\Theta(\log \log n )$~\cite{Korman10} &															&$ \Omega(\log n)$\cite{Alstrup02NCA}	&				\\ \hdashline   
+			Lower bound		&$\log n + \Theta(1)$					&$\log n +\Theta(\log \log n)$	  	    &$\frac{1}{8}\log^2 n-O(\log n)$~\cite{Gavoille2001}					&$\log n + \Theta(1)$				 		&$\log n + \Theta(1)$	\\ 
+							&							&[Theorem~\ref{thm:unknown}]	   	   &															&				 			&	\\ \hline 
+			 
+			 
+			 
+				
+			$Trees(n,\Delta)$:&&&&&&\\
+			Upper bound 	&$\log n +O(1)$ 				  	  &$\log n +$ 			 &$\frac{1}{2}\log^2 n +O(\log n)$  \cite{Gavoille2001}		&$ O(\log n)$\cite{Alstrup02NCA} 		&$\log n + \Theta(\log \log \Delta)$~\cite{Alstrup05}	\\ 
+						&								&$\Theta(\log \log n)$ \cite{Korman10} \\\hdashline
+			Lower bound 	&$\log n + \Theta(1)$						        &$\log n + \Theta(1)$						 &$\frac{1}{8}\log^2 n-O(\log n)$ \cite{Gavoille2001} 		&$ \Omega(\log n)$\cite{Alstrup02NCA}	&$\log n$			\\ \hline 
+			
+			
+			
+			$Trees(n,\delta)$:&&&&&&\\
+			Upper bound & \cite{Fraigniaud10}$\log n + $ 				  	    &$\log n + $ 							 &$\frac{1}{2}\log^2 n +O(\log n)$ 						&$\log n +O(1)$ 	&$\log n+ $	\\ 
+						&$3 \log d +O(1)$   &$2 \log \log d +O(1)$\cite{Fraigniaud10}	&						&				&$ \Theta(\log \log n)~\cite{Alstrup05}$\\	\hdashline				
+			Lower  bound & $\log n + \Theta(1)$						    &	$\log n + \Theta(1)$							 &$\log n + \Theta(1)$					&$\log n + \Theta(1)$			&$\log n + \Theta(\log \log n) $  \\ 
+			&&&&&[Corollary~\ref{Cor:lowerbounds}]			 	\\ \hline						
+%    \hline
+  \end{tabular*}\par\medskip
+ }
+\label{tab:priors}
+ \label{Table2}
+\end{table}
+%\section{General variants}
+%	We describe two techniques that extend  all labeling schemes mentioned.
+%	\subsection{Converting a static labeling scheme to dynamic}
+	
+		

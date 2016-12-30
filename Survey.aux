@@ -1,0 +1,582 @@
+\relax 
+\citation{Breuer67}
+\citation{Kannan92}
+\citation{Muller1988}
+\citation{Peleg03}
+\citation{rado1964universal}
+\citation{gavoille2007shorter}
+\citation{adjiashvili2014labeling}
+\citation{Alstrup02}
+\citation{Thorup01}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}}
+\@writefile{tdo}{\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color  {orange}o}}\ I don't think ``adjacency'' should be written like this all over the place (but it's fine to have it slanted here).}{1}}
+\pgfsyspdfmark {pgfid1}{28094197}{26468086}
+\pgfsyspdfmark {pgfid4}{34867771}{26476610}
+\pgfsyspdfmark {pgfid5}{36035458}{26240026}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.1}An example}{2}}
+\newlabel{sec:example}{{1.1}{2}}
+\newlabel{fig:simple}{{1}{2}}
+\@writefile{tdo}{\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color  {orange}o}}\ Do we really want to assume that $n$ is a power of 2? In principle, you cannot know that such an algorithm works for non-powers of 2 (although it most often will).}{2}}
+\pgfsyspdfmark {pgfid64}{22071664}{18081742}
+\pgfsyspdfmark {pgfid65}{5460623}{18090266}
+\pgfsyspdfmark {pgfid66}{6628310}{17853682}
+\citation{alstrup2015optimal}
+\citation{Gavoille06}
+\citation{Fraigniaud10}
+\citation{adjiashvili2014labeling}
+\citation{fraigniaud2009}
+\citation{dahlgaard2014improved}
+\citation{Fraigniaud10}
+\citation{fraigniaud2009}
+\citation{fraigniaud2009}
+\citation{Peleg05}
+\citation{Alstrup05}
+\citation{Alstrup05}
+\citation{freedman2016optimal}
+\citation{Gavoille2001}
+\citation{Katz00}
+\citation{Katz00}
+\citation{katz2004labeling}
+\citation{Green14}
+\citation{Peleg05}
+\citation{Thorup01}
+\citation{Fraigniaud01}
+\citation{lewenstein2013succinct}
+\citation{Alstrup05}
+\citation{freedman2016optimal}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.2}Outline}{3}}
+\@writefile{tdo}{\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color  {orange}o}}\ Why are tables numerated with Roman numerals? It seems a bit inconsistent.}{3}}
+\pgfsyspdfmark {pgfid69}{30864545}{41219584}
+\pgfsyspdfmark {pgfid72}{34867771}{41228108}
+\pgfsyspdfmark {pgfid73}{36035458}{40991524}
+\@writefile{tdo}{\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color  {orange}o}}\ The ``Trees'' should be a LaTeX command - all over the document...}{3}}
+\pgfsyspdfmark {pgfid74}{20411949}{39056896}
+\pgfsyspdfmark {pgfid77}{34867771}{37315364}
+\pgfsyspdfmark {pgfid78}{36035458}{37078780}
+\@writefile{tdo}{\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color  {orange}o}}\ It's totally ugly, in my opinion, that all these functions are slanted. Use $\backslash $operatorname or something.}{3}}
+\pgfsyspdfmark {pgfid79}{27148811}{36299780}
+\pgfsyspdfmark {pgfid82}{34867771}{33955072}
+\pgfsyspdfmark {pgfid83}{36035458}{33718488}
+\@writefile{tdo}{\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color  {orange}o}}\ Do we need to define and point out the uniquess of ``$\leadsto $''?}{3}}
+\pgfsyspdfmark {pgfid84}{11511268}{32433156}
+\pgfsyspdfmark {pgfid87}{34867771}{28800418}
+\pgfsyspdfmark {pgfid88}{36035458}{28563834}
+\@writefile{tdo}{\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color  {orange}o}}\ I think this table should be properly introduced. Otherwise it's a bit weird to write ``also''.}{3}}
+\pgfsyspdfmark {pgfid89}{29257943}{25940487}
+\pgfsyspdfmark {pgfid92}{34867771}{25440125}
+\pgfsyspdfmark {pgfid93}{36035458}{25203541}
+\@writefile{tdo}{\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color  {orange}o}}\ ``WeightedTrees'' should be a LaTeX command}{3}}
+\pgfsyspdfmark {pgfid94}{25200419}{23777799}
+\pgfsyspdfmark {pgfid97}{34867771}{20740949}
+\pgfsyspdfmark {pgfid98}{36035458}{20504365}
+\@writefile{tdo}{\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color  {orange}o}}\ Do we need to define ``length of the path'' in the weighted case?}{3}}
+\pgfsyspdfmark {pgfid99}{21721433}{18857995}
+\pgfsyspdfmark {pgfid102}{34867771}{18167089}
+\pgfsyspdfmark {pgfid103}{36035458}{17930505}
+\@writefile{tdo}{\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color  {orange}o}}\ I'm not sure that is the standard definition. The labeling problem is different in the two cases---uniqueness is not required!}{3}}
+\pgfsyspdfmark {pgfid104}{18925659}{15253515}
+\pgfsyspdfmark {pgfid107}{34867771}{14647561}
+\pgfsyspdfmark {pgfid108}{36035458}{14410977}
+\citation{Gavoille06}
+\citation{Alstrup05}
+\citation{Alstrup02NCA}
+\citation{Gavoille06}
+\citation{Gavoille2001}
+\citation{Alstrup02NCA}
+\citation{Gavoille2001}
+\citation{Gavoille2001}
+\citation{Alstrup02NCA}
+\citation{Alstrup05}
+\citation{Gavoille2001}
+\citation{Alstrup02NCA}
+\citation{Alstrup05}
+\citation{Kaplan01}
+\citation{Cohen02,lu2013xml,harder2007node,Kaplan01,wu2004prime,cohen10journal}
+\citation{Kannan92}
+\newlabel{fig:complexityruler}{{2}{4}}
+\@writefile{tdo}{\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color  {orange}o}}\ Comment to Table I: There is also a less efficient NCA labeling scheme with smaller labels}{4}}
+\pgfsyspdfmark {pgfid109}{7908474}{28361586}
+\pgfsyspdfmark {pgfid110}{5460623}{28370110}
+\pgfsyspdfmark {pgfid111}{6628310}{28133526}
+\newlabel{section:Limited}{{1.2}{4}}
+\@writefile{toc}{\contentsline {paragraph}{Bounded trees}{4}}
+\@writefile{tdo}{\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color  {orange}o}}\ Comment to Table II: It's not the encoder that is ``unique''}{4}}
+\pgfsyspdfmark {pgfid114}{7908474}{23673937}
+\pgfsyspdfmark {pgfid115}{5460623}{23669109}
+\pgfsyspdfmark {pgfid116}{6628310}{23432525}
+\@writefile{tdo}{\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color  {orange}o}}\ Comment to non-existing table: What about all the other variations of labeling schemes, e.g. approximation, probabilistic etc.?}{4}}
+\pgfsyspdfmark {pgfid119}{7908474}{22953041}
+\pgfsyspdfmark {pgfid120}{5460623}{20480535}
+\pgfsyspdfmark {pgfid121}{6628310}{20243951}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.3}Practical and theoretical applications of labeling schemes}{4}}
+\newlabel{section:applications}{{1.3}{4}}
+\@writefile{toc}{\contentsline {paragraph}{XML querying}{4}}
+\newlabel{table:main}{{I}{5}}
+\citation{Kannan92}
+\citation{rado1964universal}
+\citation{Rodeh10}
+\citation{Paul01}
+\citation{Gavoille2001}
+\citation{abraham2010hub,abraham2012hierarchical}
+\newlabel{table:bounded}{{II}{6}}
+\@writefile{tdo}{\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color  {orange}o}}\ You just argued that it cannot be reduced. I guess you mean everything in addition to the $\qopname  \relax o{log}n$.}{6}}
+\pgfsyspdfmark {pgfid124}{13328902}{27265718}
+\pgfsyspdfmark {pgfid125}{5460623}{27274242}
+\pgfsyspdfmark {pgfid126}{6628310}{27037658}
+\@writefile{toc}{\contentsline {paragraph}{Graph theory}{6}}
+\@writefile{toc}{\contentsline {paragraph}{Shortest paths in road networks}{6}}
+\citation{Peleg05}
+\citation{Peleg03,Thorup01,Fraigniaud01,gavoille96,Dom07,Korman07K,krioukov2004compact,abraham2006routing,abraham2005name}
+\@writefile{toc}{\contentsline {paragraph}{Routing schemes}{7}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.4}Preliminaries}{7}}
+\newlabel{section:preliminaries}{{1.4}{7}}
+\@writefile{tdo}{\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color  {orange}o}}\ Really? Maybe you mean that we \emph  {define} $\qopname  \relax o{log}n$ to mean $\ensuremath  {\left \lceil {\qopname  \relax o{log}_2 n}\right \rceil }$?}{7}}
+\pgfsyspdfmark {pgfid129}{29026434}{32871214}
+\pgfsyspdfmark {pgfid132}{34867771}{32879738}
+\pgfsyspdfmark {pgfid133}{36035458}{32643154}
+\@writefile{tdo}{\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color  {orange}o}}\ The latter seems like a really dangerous and weird definition. Then we have e.g. $\vert 4\vert =3$.}{7}}
+\pgfsyspdfmark {pgfid134}{16693524}{30708526}
+\pgfsyspdfmark {pgfid137}{34867771}{29266816}
+\pgfsyspdfmark {pgfid138}{36035458}{29030232}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {1.4.1}Graph families related definitions}{7}}
+\@writefile{tdo}{\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color  {orange}o}}\ Again, I think this is somewhat restrictive}{7}}
+\pgfsyspdfmark {pgfid139}{22704085}{26648735}
+\pgfsyspdfmark {pgfid142}{34867771}{24788983}
+\pgfsyspdfmark {pgfid143}{36035458}{24552399}
+\@writefile{tdo}{\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color  {orange}o}}\ Make a LaTeX command for ``Forests''}{7}}
+\pgfsyspdfmark {pgfid144}{12579491}{25206943}
+\pgfsyspdfmark {pgfid147}{34867771}{22055887}
+\pgfsyspdfmark {pgfid148}{36035458}{21819303}
+\@writefile{tdo}{\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color  {orange}o}}\ If trees are rooted, this may not be the correct definition}{7}}
+\pgfsyspdfmark {pgfid149}{12309938}{18718879}
+\pgfsyspdfmark {pgfid152}{34867771}{18727403}
+\pgfsyspdfmark {pgfid153}{36035458}{18490819}
+\newlabel{definitions-of-trees}{{1.4.2}{7}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {1.4.2}Basic tree related definitions}{7}}
+\@writefile{tdo}{\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color  {orange}o}}\ Since edges have no direction, I think the correct definition would be $\{v,u\}$}{7}}
+\pgfsyspdfmark {pgfid154}{21048087}{13938191}
+\pgfsyspdfmark {pgfid157}{34867771}{13946715}
+\pgfsyspdfmark {pgfid158}{36035458}{13710131}
+\@writefile{tdo}{\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color  {orange}o}}\ Can there be duplicates? If yes, then paths are not unique.}{7}}
+\pgfsyspdfmark {pgfid159}{8859748}{9612815}
+\pgfsyspdfmark {pgfid162}{34867771}{9621339}
+\pgfsyspdfmark {pgfid163}{36035458}{9384755}
+\citation{Kano07}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {1.4.3}Labeling schemes and variations}{8}}
+\newlabel{dfn:labeling_schemes}{{1.1}{8}}
+\@writefile{tdo}{\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color  {orange}o}}\ Why do you need two notations for the same thing?}{8}}
+\pgfsyspdfmark {pgfid164}{17594350}{34091515}
+\pgfsyspdfmark {pgfid165}{5460623}{34100039}
+\pgfsyspdfmark {pgfid166}{6628310}{33863455}
+\@writefile{tdo}{\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color  {orange}o}}\ Why these strange brackets?}{8}}
+\pgfsyspdfmark {pgfid169}{20535499}{33370619}
+\pgfsyspdfmark {pgfid170}{5460623}{30911465}
+\pgfsyspdfmark {pgfid171}{6628310}{30674881}
+\newlabel{remark:unique}{{1.2}{8}}
+\@writefile{tdo}{\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color  {orange}o}}\ Do we actually measure time for the whole graph and not just individual nodes?}{8}}
+\pgfsyspdfmark {pgfid174}{14389817}{18480074}
+\pgfsyspdfmark {pgfid175}{5460623}{18488598}
+\pgfsyspdfmark {pgfid176}{6628310}{18252014}
+\newlabel{dfn:approx-label}{{1.4}{8}}
+\@writefile{tdo}{\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color  {orange}o}}\ Is this the standard definition? I would have thought that the lower bound did not divide by $R$. Also, what about additive errors, which we will need for distances?}{8}}
+\pgfsyspdfmark {pgfid179}{17438249}{10505347}
+\pgfsyspdfmark {pgfid180}{5460623}{10513871}
+\pgfsyspdfmark {pgfid181}{6628310}{10277287}
+\citation{courcelle2007forbidden}
+\citation{fraigniaud2009}
+\citation{Kaplan01,Kannan92}
+\citation{Alstrup02,Korman07K,gavoille07,Alstrup05}
+\citation{Esben13}
+\newlabel{dfn:forbidden}{{1.5}{9}}
+\@writefile{tdo}{\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color  {orange}o}}\ I simply don't understand this definition. What is this used for? And did we even define ``subgraph'' anywhere (should it be node-induced etc.?}{9}}
+\pgfsyspdfmark {pgfid184}{22803423}{42275397}
+\pgfsyspdfmark {pgfid187}{34867771}{42283921}
+\pgfsyspdfmark {pgfid188}{36035458}{42047337}
+\newlabel{dfn:one-sided}{{1.6}{9}}
+\@writefile{tdo}{\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color  {orange}o}}\ I don't think we have defined non-deterministic encoders anywhere?}{9}}
+\pgfsyspdfmark {pgfid189}{15330648}{32995873}
+\pgfsyspdfmark {pgfid192}{34867771}{33004397}
+\pgfsyspdfmark {pgfid193}{36035458}{32767813}
+\@writefile{tdo}{\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color  {orange}o}}\ HUH? I can trivially do that!}{9}}
+\pgfsyspdfmark {pgfid194}{16210982}{25066017}
+\pgfsyspdfmark {pgfid197}{34867771}{25074541}
+\pgfsyspdfmark {pgfid198}{36035458}{24837957}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Common Algorithmic Techniques}{9}}
+\newlabel{section:techniques}{{2}{9}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Binary strings and bit tricks}{9}}
+\newlabel{section:Misc-Tools}{{2.1}{9}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.1.1}Number representation}{9}}
+\@writefile{tdo}{\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color  {orange}o}}\ It's not completely clear to me what ``words'' are, nor is it clear how a label can be seen as an integer?}{9}}
+\pgfsyspdfmark {pgfid199}{12012038}{17542671}
+\pgfsyspdfmark {pgfid202}{34867771}{17551195}
+\pgfsyspdfmark {pgfid203}{36035458}{17314611}
+\@writefile{tdo}{\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color  {orange}o}}\ Would it not be better to consider $\{0,\dots  ,n-1\}$ and use $\lfloor \qopname  \relax o{log}x \rfloor $ bits?}{9}}
+\pgfsyspdfmark {pgfid204}{18235018}{16100879}
+\pgfsyspdfmark {pgfid207}{34867771}{12789757}
+\pgfsyspdfmark {pgfid208}{36035458}{12553173}
+\@writefile{tdo}{\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color  {orange}o}}\ This requires that we know the length of the string. Can we always assume that? (In some situations with a ``data stream'', we know when the string starts but not necessarily when it ends.)}{9}}
+\pgfsyspdfmark {pgfid209}{19393384}{10333711}
+\pgfsyspdfmark {pgfid212}{34867771}{8877013}
+\pgfsyspdfmark {pgfid213}{36035458}{8640429}
+\newlabel{tec:padding}{{2.1.2}{10}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.1.2}Padding}{10}}
+\newlabel{tec:approx}{{2.1.3}{10}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.1.3}Approximation using $O(\qopname  \relax o{log}\qopname  \relax o{log}n)$ bits}{10}}
+\@writefile{tdo}{\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color  {orange}o}}\ This definition of ``approximation'' does not comply with the previous one}{10}}
+\pgfsyspdfmark {pgfid214}{9080174}{36028671}
+\pgfsyspdfmark {pgfid215}{5460623}{36037195}
+\pgfsyspdfmark {pgfid216}{6628310}{35800611}
+\newlabel{tec:wordinside}{{2.1.4}{10}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.1.4}Word storing in a string}{10}}
+\newlabel{lemma:numberinside}{{2.1}{10}}
+\@writefile{tdo}{\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color  {orange}o}}\ I think something is wrong here. Why is $x=z-m+w$?}{10}}
+\pgfsyspdfmark {pgfid219}{21334033}{25435956}
+\pgfsyspdfmark {pgfid220}{5460623}{25444480}
+\pgfsyspdfmark {pgfid221}{6628310}{25207896}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Efficient encodings}{10}}
+\newlabel{sec:efficient-encoding}{{2.2}{10}}
+\newlabel{tec:dfs}{{2.2.1}{10}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.1} Depth-first traversal}{10}}
+\@writefile{tdo}{\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color  {orange}o}}\ This seems like an unfortunate notation. The ``$i$'' is normally used for indexing.}{10}}
+\pgfsyspdfmark {pgfid224}{21014829}{18845495}
+\pgfsyspdfmark {pgfid225}{5460623}{18854019}
+\pgfsyspdfmark {pgfid226}{6628310}{18617435}
+\newlabel{tec:suffix}{{2.2.2}{10}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.2}Suffix-free codes}{10}}
+\@writefile{tdo}{\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color  {orange}o}}\ ....and what is a word?}{10}}
+\pgfsyspdfmark {pgfid229}{21668625}{16310332}
+\pgfsyspdfmark {pgfid230}{5460623}{14866986}
+\pgfsyspdfmark {pgfid231}{6628310}{14630402}
+\citation{cover2012elements}
+\citation{hareltarjan}
+\newlabel{tec:alphabetic}{{2.2.3}{11}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.3}Alphabetic sequences}{11}}
+\newlabel{lemma:Gilbert}{{2.2}{11}}
+\@writefile{tdo}{\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color  {orange}o}}\ What does this last sentence have to do with all the rest?}{11}}
+\pgfsyspdfmark {pgfid234}{27142652}{20322280}
+\pgfsyspdfmark {pgfid237}{34867771}{20330804}
+\pgfsyspdfmark {pgfid238}{36035458}{20094220}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Tree decompositions}{11}}
+\newlabel{section:Tree-decompositions}{{2.3}{11}}
+\@writefile{tdo}{\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color  {orange}o}}\ That seems a bit subjective. Do we want to niclude it?}{11}}
+\pgfsyspdfmark {pgfid239}{10880818}{14507377}
+\pgfsyspdfmark {pgfid242}{34867771}{14515901}
+\pgfsyspdfmark {pgfid243}{36035458}{14279317}
+\newlabel{tec:heavylight}{{2.3.1}{11}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.3.1}Heavy-light decomposition}{11}}
+\citation{chung1989separator}
+\citation{jordan1869assemblages}
+\citation{korman2007compact}
+\newlabel{fig:heavylighttree}{{3}{12}}
+\newlabel{tec:separator}{{2.3.2}{12}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.3.2}Separator}{12}}
+\newlabel{thm:separatorexits}{{2.3}{12}}
+\citation{Thorup01}
+\citation{Korman10}
+\newlabel{fig:separator}{{4}{13}}
+\newlabel{tec:Splines}{{2.3.3}{13}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.3.3}Spines decomposition}{13}}
+\@writefile{tdo}{\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color  {orange}o}}\ Is this standard terminology? It seems a bit weird to me...}{13}}
+\pgfsyspdfmark {pgfid302}{18010008}{22258538}
+\pgfsyspdfmark {pgfid305}{34867771}{22267062}
+\pgfsyspdfmark {pgfid306}{36035458}{22030478}
+\newlabel{tec:clustering}{{2.3.4}{13}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.3.4}Clustering}{13}}
+\citation{alstrup1997finding}
+\citation{Alstrup05}
+\citation{dahlgaard2014dynamic}
+\newlabel{fig:ladder}{{5}{14}}
+\newlabel{dfn:cluster}{{2.4}{14}}
+\@writefile{tdo}{\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color  {orange}o}}\ The latter is unclear to me: doesn't this always hold for all nodes by definintion?}{14}}
+\pgfsyspdfmark {pgfid307}{27577392}{30807411}
+\pgfsyspdfmark {pgfid308}{5460623}{30815935}
+\pgfsyspdfmark {pgfid309}{6628310}{30579351}
+\newlabel{fig:niceClusterDemo}{{6}{14}}
+\newlabel{dfn:nice-cluster-partition}{{2.5}{14}}
+\@writefile{tdo}{\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color  {orange}o}}\ Shouldn't this definition depend on x? As in ``x-nice''?}{14}}
+\pgfsyspdfmark {pgfid312}{17911503}{17132117}
+\pgfsyspdfmark {pgfid313}{5460623}{17140641}
+\pgfsyspdfmark {pgfid314}{6628310}{16904057}
+\newlabel{lemma:decomposition}{{2.6}{14}}
+\@writefile{tdo}{\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color  {orange}o}}\ I think it is more than fair that we do not prove things here but just refer. But why do we then prove SOME things?}{14}}
+\pgfsyspdfmark {pgfid317}{23220077}{13463792}
+\pgfsyspdfmark {pgfid318}{5460623}{13472316}
+\pgfsyspdfmark {pgfid319}{6628310}{13235732}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4}Boxes and groups}{14}}
+\newlabel{section:boxes-and-groups}{{2.4}{14}}
+\citation{Kannan92}
+\newlabel{lemma:boxgroups}{{2.7}{15}}
+\@writefile{tdo}{\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color  {orange}o}}\ Should $X$ have size $(k+1)n$ then?}{15}}
+\pgfsyspdfmark {pgfid322}{8623766}{41638808}
+\pgfsyspdfmark {pgfid325}{34867771}{41646349}
+\pgfsyspdfmark {pgfid326}{36035458}{41409765}
+\newlabel{item:boxgroup1}{{i}{15}}
+\newlabel{item:boxgroup2}{{ii}{15}}
+\@writefile{tdo}{\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color  {orange}o}}\ What is b? Don't you mean k?}{15}}
+\pgfsyspdfmark {pgfid327}{23317656}{30746385}
+\pgfsyspdfmark {pgfid330}{34867771}{30754909}
+\pgfsyspdfmark {pgfid331}{36035458}{30518325}
+\@writefile{toc}{\contentsline {section}{\numberline {3}\emph  {Ancestry}\xspace  }{15}}
+\newlabel{section:Anc}{{3}{15}}
+\newlabel{section:NaiveAncestry}{{3}{15}}
+\@writefile{toc}{\contentsline {paragraph}{Na\"ive algorithm}{15}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Literature review}{15}}
+\newlabel{sec:anc-lit}{{3.1}{15}}
+\citation{Kaplan01}
+\citation{Alstrup06}
+\citation{Alstrup05}
+\citation{Fraigniaud10}
+\citation{Korman10}
+\citation{knudsen2014private}
+\citation{Kannan92}
+\citation{Alstrup05}
+\citation{kaplan2002comparison,wu2004prime,o2004ordpaths,li2005qed,lu2005region,harder2007node,harder2007node,xu2009dde,cohen2010labeling,o2012scooter,ghaleb2013novel}
+\citation{cohen2010labeling}
+\newlabel{fig:simple-ancestry}{{7}{16}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Upper bound}{16}}
+\newlabel{subsetion:mat-optimal}{{3.2}{16}}
+\newlabel{line:critical}{{6}{17}}
+\newlabel{Lemma:newwriting}{{3.2}{17}}
+\citation{Alstrup05}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Lower bound}{18}}
+\newlabel{sub-anc-lower}{{3.3}{18}}
+\newlabel{theo:ancestrytreeslower}{{3.3}{18}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Dynamic \emph  {Ancestry}\xspace  labeling schemes}{18}}
+\newlabel{sub-anc-dynamic}{{3.4}{18}}
+\citation{Cohen02}
+\citation{Kaplan01}
+\newlabel{fig:TheosDrawing}{{8}{19}}
+\@writefile{toc}{\contentsline {paragraph}{Lower bound for persistent \emph  {Ancestry}\xspace  labeling scheme}{19}}
+\newlabel{dfn:kaplans-trees}{{3.4}{19}}
+\newlabel{lemma:persistent}{{3.5}{19}}
+\citation{Cohen02}
+\citation{dahlgaard2014dynamic}
+\citation{Breuer67}
+\citation{Kannan92}
+\citation{Muller1988}
+\citation{Kaplan01}
+\citation{Alstrup02}
+\citation{Fraigniaud10}
+\citation{Gavoille06}
+\citation{adjiashvili2014labeling}
+\citation{fraigniaud2009}
+\newlabel{fig:KaplansTrees}{{9}{20}}
+\newlabel{cor:persistent}{{3.6}{20}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Adjacency}{20}}
+\newlabel{section:Adj}{{4}{20}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Literature overview}{20}}
+\citation{nash1961edge}
+\citation{chen1994short}
+\citation{Kannan92}
+\citation{Alstrup02}
+\citation{Kannan92}
+\citation{Alstrup02}
+\citation{Alstrup02}
+\citation{Alstrup02}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Upper bound for $Trees(n)$ }{21}}
+\newlabel{sec-adj-lb}{{4.2}{21}}
+\newlabel{sec-adj-simple}{{4.2.1}{21}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.1}An \emph  {Adjacency}\xspace  labeling scheme of $\qopname  \relax o{log}n +O(\qopname  \relax o{log}\qopname  \relax o{log}n$) bits}{21}}
+\newlabel{lem:4loglogn}{{4.1}{21}}
+\newlabel{Lemma-adj-loglogn}{{4.1}{21}}
+\newlabel{sec:log-star}{{4.2.2}{21}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.2}A $\qopname  \relax o{log}n + O(\qopname  \relax o{log}^*n)$ labeling scheme}{21}}
+\citation{Alstrup02}
+\citation{Alstrup02}
+\newlabel{fig:bitTricks}{{10}{22}}
+\newlabel{lemma:nice_decomp}{{4.3}{22}}
+\newlabel{dfn:macro-tree}{{4.4}{22}}
+\newlabel{theo:adjacencytreesupper}{{4.5}{22}}
+\newlabel{fig:crazyeleven}{{11}{23}}
+\newlabel{fig:Clustering}{{12}{23}}
+\citation{Gavoille06}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Traversal and jumping}{24}}
+\newlabel{traversaljumping}{{4.3}{24}}
+\citation{adjiashvili2014labeling}
+\citation{BCLR}
+\citation{adjiashvili2014labeling}
+\citation{BCLR}
+\citation{fraigniaud2009}
+\newlabel{fig:caterpillar}{{13}{25}}
+\@writefile{toc}{\contentsline {paragraph}{Optimal bounded degree}{25}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}One-sided error \emph  {Adjacency}\xspace  labeling scheme}{25}}
+\newlabel{sec-adj-onesided}{{4.4}{25}}
+\citation{fraigniaud2009}
+\citation{aho}
+\citation{hareltarjan}
+\citation{Alstrup02NCA}
+\citation{Green14}
+\citation{peleg2000informative}
+\@writefile{toc}{\contentsline {section}{\numberline {5}\emph  {NCA}\xspace  }{26}}
+\newlabel{section:NCA}{{5}{26}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Literature review}{26}}
+\newlabel{sec:Lit-NCA}{{5.1}{26}}
+\citation{blin2010fast}
+\citation{caminiti2009informative,Fischer09}
+\citation{Korman07K}
+\citation{gabow}
+\citation{Peleg05}
+\citation{Peleg05}
+\@writefile{toc}{\contentsline {paragraph}{Connection to other problems}{27}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}\emph  {Id-NCA}\xspace  }{27}}
+\newlabel{sec-NCA-FIXED}{{5.2}{27}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.1}\emph  {NCA}\xspace  , \emph  {SepLevel}\xspace  , and their connection to \emph  {Distance}\xspace  }{27}}
+\newlabel{NCAconnection}{{5.1}{27}}
+\citation{gavoillea2004distance}
+\citation{gavoillea2004distance}
+\citation{Peleg05}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.2}Upper bound for \emph  {Id-NCA}\xspace  }{28}}
+\newlabel{NCA-fixed-upper}{{5.3}{28}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}\emph  {Label-NCA}\xspace  }{28}}
+\newlabel{section-NCA-designer}{{5.3}{28}}
+\citation{Peleg00}
+\citation{Alstrup02NCA}
+\citation{Alstrup02NCA}
+\newlabel{fig:NCAPeleg}{{14}{29}}
+\newlabel{thm:nca-designer-long}{{5.4}{29}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.1}\emph  {Label-NCA}\xspace  with $O(\qopname  \relax o{log}n)$ bits}{29}}
+\citation{Esben13}
+\citation{Green14}
+\citation{Korman07K}
+\newlabel{thm:nca-short}{{5.5}{30}}
+\newlabel{fig:NCAESBEN}{{15}{30}}
+\citation{Thorup01}
+\citation{Thorup01}
+\citation{Fraigniaud01}
+\citation{peleg1999proximity}
+\citation{Fraigniaud01}
+\citation{Thorup01}
+\citation{fraigniaud2002space}
+\citation{krioukov2007compact}
+\citation{korman2006dynamic,korman2008improved}
+\@writefile{toc}{\contentsline {paragraph}{Labeling schemes with a query}{31}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}\emph  {Routing}\xspace  }{31}}
+\newlabel{section:Routing}{{6}{31}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}Introduction to routing schemes}{31}}
+\newlabel{section:routing-intro}{{6.1}{31}}
+\newlabel{dfn:port}{{6.1}{31}}
+\citation{gavoille2001space}
+\citation{abraham2004compact}
+\citation{gavoille2001routing}
+\citation{Dom07}
+\citation{Thorup01}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}Literature review}{32}}
+\newlabel{routing:literature}{{6.2}{32}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3}Designer port model}{32}}
+\newlabel{sec:ThorupZwick}{{6.3}{32}}
+\newlabel{thm:routing-upper}{{6.2}{32}}
+\@writefile{toc}{\contentsline {paragraph}{Label description}{32}}
+\newlabel{fig:routing-crazy}{{16}{33}}
+\newlabel{lemma:tikun}{{6.3}{33}}
+\citation{Thorup01}
+\citation{Thorup01}
+\newlabel{lemma:routingsize}{{6.4}{34}}
+\@writefile{toc}{\contentsline {paragraph}{Decoding}{34}}
+\citation{Green14}
+\citation{Thorup01}
+\citation{fraigniaud2002space}
+\citation{Fraigniaud01}
+\bibstyle{ACM-Reference-Format-Journals}
+\bibdata{lit}
+\bibcite{Alstrup06}{\citeauthoryear {Abiteboul, Alstrup, Kaplan, Milo, and Rauhe}{Abiteboul et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{2006}}
+\bibcite{Kaplan01}{\citeauthoryear {Abiteboul, Kaplan, and Milo}{Abiteboul et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{2001}}
+\bibcite{abraham2010hub}{\citeauthoryear {Abraham, Delling, Goldberg, and Werneck}{Abraham et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{2010}}
+\bibcite{abraham2012hierarchical}{\citeauthoryear {Abraham, Delling, Goldberg, and Werneck}{Abraham et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{2012}}
+\bibcite{abraham2006routing}{\citeauthoryear {Abraham, Gavoille, Goldberg, and Malkhi}{Abraham et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{2006}}
+\bibcite{abraham2004compact}{\citeauthoryear {Abraham, Gavoille, Malkhi, Nisan, and Thorup}{Abraham et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{2004}}
+\bibcite{abraham2005name}{\citeauthoryear {Abraham and Malkhi}{Abraham and Malkhi}{2005}}
+\@writefile{toc}{\contentsline {paragraph}{Implications}{35}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.4}Fixed Port Model}{35}}
+\newlabel{sec:ThorupZwickFixedPort}{{6.4}{35}}
+\newlabel{thm:routing-upper-fixed}{{6.5}{35}}
+\bibcite{adjiashvili2014labeling}{\citeauthoryear {Adjiashvili and Rotbart}{Adjiashvili and Rotbart}{2014}}
+\bibcite{aho}{\citeauthoryear {Aho, Hopcroft, and Ullman}{Aho et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{1973}}
+\bibcite{Alstrup05}{\citeauthoryear {Alstrup, Bille, and Rauhe}{Alstrup et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{2005}}
+\bibcite{Green14}{\citeauthoryear {Alstrup, Bistrup\nobreakspace  {}Halvorsen, and Green\nobreakspace  {}Larsen}{Alstrup et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{2014}}
+\bibcite{alstrup2015optimal}{\citeauthoryear {Alstrup, Dahlgaard, and Knudsen}{Alstrup et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{2015}}
+\bibcite{Alstrup02NCA}{\citeauthoryear {Alstrup, Gavoille, Kaplan, and Rauhe}{Alstrup et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{2002}}
+\bibcite{alstrup1997finding}{\citeauthoryear {Alstrup, Laurdisen, Sommerland, and Thorup}{Alstrup et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{1997}}
+\bibcite{Alstrup02}{\citeauthoryear {Alstrup and Rauhe}{Alstrup and Rauhe}{2002}}
+\bibcite{BCLR}{\citeauthoryear {Bhatt, Graham\nobreakspace  {}Chung, Leighton, and Rosenberg}{Bhatt et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{1989}}
+\bibcite{Esben13}{\citeauthoryear {Bistrup\nobreakspace  {}Halvorsen}{Bistrup\nobreakspace  {}Halvorsen}{2013}}
+\bibcite{blin2010fast}{\citeauthoryear {Blin, Dolev, Potop-Butucaru, and Rovedakis}{Blin et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{2010}}
+\bibcite{Gavoille06}{\citeauthoryear {Bonichon, Gavoille, and Labourel}{Bonichon et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{2006}}
+\bibcite{Breuer67}{\citeauthoryear {Breuer and Folkman}{Breuer and Folkman}{1967}}
+\bibcite{caminiti2009informative}{\citeauthoryear {Caminiti, Finocchi, and Petreschi}{Caminiti et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{2009}}
+\bibcite{chen1994short}{\citeauthoryear {Chen, Matsumoto, Wang, Zhang, and Zhang}{Chen et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{1994}}
+\bibcite{chung1989separator}{\citeauthoryear {Chung}{Chung}{1989}}
+\bibcite{Cohen02}{\citeauthoryear {Cohen, Kaplan, and Milo}{Cohen et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{2002}}
+\bibcite{cohen10journal}{\citeauthoryear {Cohen, Kaplan, and Milo}{Cohen et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{2010a}}
+\bibcite{cohen2010labeling}{\citeauthoryear {Cohen, Kaplan, and Milo}{Cohen et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{2010b}}
+\bibcite{Cormen01}{\citeauthoryear {Cormen, Stein, Rivest, and Leiserson}{Cormen et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{2001}}
+\bibcite{courcelle2007forbidden}{\citeauthoryear {Courcelle, Gavoille, Kant{\'e}, and Twigg}{Courcelle et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{2007}}
+\bibcite{cover2012elements}{\citeauthoryear {Cover and Thomas}{Cover and Thomas}{2012}}
+\bibcite{knudsen2014private}{\citeauthoryear {Dahlgaard, Knudsen, and Rotbart}{Dahlgaard et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{2014a}}
+\bibcite{dahlgaard2014dynamic}{\citeauthoryear {Dahlgaard, Knudsen, and Rotbart}{Dahlgaard et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{2014b}}
+\bibcite{dahlgaard2014improved}{\citeauthoryear {Dahlgaard, Knudsen, and Rotbart}{Dahlgaard et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{2014c}}
+\bibcite{Dom07}{\citeauthoryear {Dom}{Dom}{2007}}
+\bibcite{Fischer09}{\citeauthoryear {Fischer}{Fischer}{2009}}
+\bibcite{Fraigniaud01}{\citeauthoryear {Fraigniaud and Gavoille}{Fraigniaud and Gavoille}{2001}}
+\bibcite{fraigniaud2002space}{\citeauthoryear {Fraigniaud and Gavoille}{Fraigniaud and Gavoille}{2002}}
+\bibcite{fraigniaud2009}{\citeauthoryear {Fraigniaud and Korman}{Fraigniaud and Korman}{2009}}
+\bibcite{Fraigniaud10}{\citeauthoryear {Fraigniaud and Korman}{Fraigniaud and Korman}{2010a}}
+\bibcite{Korman10}{\citeauthoryear {Fraigniaud and Korman}{Fraigniaud and Korman}{2010b}}
+\bibcite{freedman2016optimal}{\citeauthoryear {Freedman, Gawrychowski, Nicholson, and Weimann}{Freedman et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{2016}}
+\bibcite{gabow}{\citeauthoryear {Gabow, Bentley, and Tarjan}{Gabow et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{1984}}
+\bibcite{gavoille2001routing}{\citeauthoryear {Gavoille}{Gavoille}{2001}}
+\bibcite{gavoille2001space}{\citeauthoryear {Gavoille and Gengler}{Gavoille and Gengler}{2001}}
+\bibcite{Katz00}{\citeauthoryear {Gavoille, Katz, Katz, Paul, and Peleg}{Gavoille et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{2000}}
+\bibcite{gavoille07}{\citeauthoryear {Gavoille and Labourel}{Gavoille and Labourel}{2007a}}
+\bibcite{gavoille2007shorter}{\citeauthoryear {Gavoille and Labourel}{Gavoille and Labourel}{2007b}}
+\bibcite{Paul01}{\citeauthoryear {Gavoille and Paul}{Gavoille and Paul}{2001}}
+\bibcite{Peleg03}{\citeauthoryear {Gavoille and Peleg}{Gavoille and Peleg}{2003}}
+\bibcite{Gavoille2001}{\citeauthoryear {Gavoille, Peleg, P{\'e}rennes, and Raz}{Gavoille et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{2001}}
+\bibcite{gavoillea2004distance}{\citeauthoryear {Gavoille, Peleg, P{\'e}rennesc, and Razb}{Gavoille et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{2004}}
+\bibcite{gavoille96}{\citeauthoryear {Gavoille and P{\'e}renn{\`e}s}{Gavoille and P{\'e}renn{\`e}s}{1996}}
+\bibcite{ghaleb2013novel}{\citeauthoryear {Ghaleb and Mohammed}{Ghaleb and Mohammed}{2013}}
+\bibcite{harder2007node}{\citeauthoryear {H{\"a}rder, Haustein, Mathis, and Wagner}{H{\"a}rder et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{2007}}
+\bibcite{hareltarjan}{\citeauthoryear {Harel and Tarjan}{Harel and Tarjan}{1984}}
+\bibcite{jordan1869assemblages}{\citeauthoryear {Jordan}{Jordan}{1869}}
+\bibcite{Kannan92}{\citeauthoryear {Kannan, Naor, and Rudich}{Kannan et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{1992}}
+\bibcite{Kano07}{\citeauthoryear {Kao, Li, and Wang}{Kao et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{2007}}
+\bibcite{kaplan2002comparison}{\citeauthoryear {Kaplan, Milo, and Shabo}{Kaplan et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{2002}}
+\bibcite{katz2004labeling}{\citeauthoryear {Katz, Katz, Korman, and Peleg}{Katz et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{2004}}
+\bibcite{korman2008improved}{\citeauthoryear {Korman}{Korman}{2008}}
+\bibcite{Korman07K}{\citeauthoryear {Korman and Kutten}{Korman and Kutten}{2007}}
+\bibcite{korman2006dynamic}{\citeauthoryear {Korman and Peleg}{Korman and Peleg}{2006}}
+\bibcite{korman2007compact}{\citeauthoryear {Korman and Peleg}{Korman and Peleg}{2007}}
+\bibcite{Rodeh10}{\citeauthoryear {Korman, Peleg, and Rodeh}{Korman et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{2010}}
+\bibcite{krioukov2007compact}{\citeauthoryear {Krioukov, Fall, Brady, et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{Krioukov et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{2007}}
+\bibcite{krioukov2004compact}{\citeauthoryear {Krioukov, Fall, and Yang}{Krioukov et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{2004}}
+\bibcite{lewenstein2013succinct}{\citeauthoryear {Lewenstein, Munro, and Raman}{Lewenstein et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{2013}}
+\bibcite{li2005qed}{\citeauthoryear {Li and Ling}{Li and Ling}{2005}}
+\bibcite{lu2013xml}{\citeauthoryear {Lu}{Lu}{2013}}
+\bibcite{lu2005region}{\citeauthoryear {Lu, Ling, Chan, and Chen}{Lu et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{2005}}
+\bibcite{Muller1988}{\citeauthoryear {Muller}{Muller}{1988}}
+\bibcite{nash1961edge}{\citeauthoryear {Nash-Williams}{Nash-Williams}{1961}}
+\bibcite{o2012scooter}{\citeauthoryear {OConnor and Roantree}{OConnor and Roantree}{2012}}
+\bibcite{o2004ordpaths}{\citeauthoryear {O'Neil, O'Neil, Pal, Cseri, Schaller, and Westbury}{O'Neil et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{2004}}
+\bibcite{peleg1999proximity}{\citeauthoryear {Peleg}{Peleg}{1999}}
+\bibcite{peleg2000informative}{\citeauthoryear {Peleg}{Peleg}{2000a}}
+\bibcite{Peleg00}{\citeauthoryear {Peleg}{Peleg}{2000b}}
+\bibcite{Peleg05}{\citeauthoryear {Peleg}{Peleg}{2005}}
+\bibcite{rado1964universal}{\citeauthoryear {Rado}{Rado}{1964}}
+\bibcite{Thorup01}{\citeauthoryear {Thorup and Zwick}{Thorup and Zwick}{2001}}
+\bibcite{wu2004prime}{\citeauthoryear {Wu, Lee, and Hsu}{Wu et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{2004}}
+\bibcite{xu2009dde}{\citeauthoryear {Xu, Ling, Wu, and Bao}{Xu et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{2009}}
+\lastpage{39}
+\citation{Kannan92}
+\citation{Cormen01}
+\@writefile{toc}{\contentsline {section}{\numberline {A}Basic Definitions}{App--1}}
+\newlabel{AppendixA}{{A}{App--1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {A.1}Sets and Operations}{App--1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {A.2}Universal graphs}{App--1}}
+\newlabel{dfn:node-induced}{{A.2}{App--1}}
+\newlabel{dfn:universal}{{A.3}{App--1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {A.3}Probability}{App--1}}
+\newlabel{dfn:prob}{{A.4}{App--1}}
+\@writefile{toc}{\contentsline {section}{\numberline {B}Proof of the claim in Lemma\nobreakspace  {}4.1\hbox {}}{App--2}}
+\newlabel{AppendixB}{{B}{App--2}}
+\newlabel{eq:yep}{{2}{App--2}}
+\@writefile{toc}{\contentsline {section}{\numberline {C}Proof of the claim in Section\nobreakspace  {}4.3\hbox {}}{App--3}}
+\newlabel{AppendixC}{{C}{App--3}}

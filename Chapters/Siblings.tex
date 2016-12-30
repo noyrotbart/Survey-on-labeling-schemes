@@ -1,0 +1,135 @@
+% !TEX root = ../Survey.tex
+% !TeX root = main.tex
+\newpage
+\section{Siblings and connectivity} \label{section:Sib}
+Both functions presented in this chapter are fundamental and whats more already have tight label size labeling scheme. We present them first due to the easy level of complexity in both  their labeling schemes as well as their lower bounds.
+We start by proving a non-trivial lower bound of $\log n + O(\log \log (n))$ on the size of labeling scheme for both functions.
+We then show a direct translation of the lower bound as an upper bound.
+We proceed by showing  that removing  the unique labeling scheme constraint yields a $\log(n)$ labeling scheme for both cases.
+Finally, we present upper and lower bounds for one-sided labeling schemes for both functions.
+
+%
+% Alstrup~\cite{Alstrup05}  discusses both lower and upper bounds for the sibling problem.  Since we have assumed nodes to be their own sibling, it is possible for a sibling labeling scheme to produce non-unique labels by giving the same label to each collection of siblings. This property makes it very easy to define optimal sibling labeling schemes, meaning that the sibling labeling problem is almost trivial.However, if we force labels to be unique, the problem becomes harder, and hence more interesting, and also more applicable to situations where labels are required to uniquely identify the nodes of a tree.
+%
+%\subsection{Lower bounds}
+%
+%\begin{theorem} \label{theo:uniquesiblingboundeddepthlower}
+%For any $\delta\geq 2$, any unique sibling labeling scheme for $\trees(N,\delta)$
+%has a worst-case label size of at least $\floor{\log N} + \floor{\log\floor{\log N}}-2$.
+%\end{theorem}
+%\begin{proof}
+%Let $n=2^{\floor{\log N-1}}=2^{\ceil{\log N}-1}$ be $N-1$ rounded down to the nearest power of $2$ and set $m=n/2$ and $k=\log m$.  Construct for $i=1,\dots ,k$ the tree $T_i$ as a root node with $m/2^i$ children all of which have $2^i$ children. Thus, $T_i$ has $m+m/2^i +1 \leq n+1\leq N$ nodes, whereof $m$ are leaves. Further, each $T_i$ has depth $2\leq \delta$ and hence belongs to $\trees(N,\delta)$.
+%
+%If two nodes in $T_i$ are not siblings, then their labels clearly cannot be used for a pair of siblings in $T_j$ for any $j\neq i$. We can therefore apply \ref{lemma:boxgroups}, using the $m$ child nodes of each tree as a ``box'' and each collection of siblings as a ``group'', and it follows that we need at least $\frac{1}{2}m(k+1)=\frac{1}{4}n\log n$ labels. 
+%If the worst-case label size is $L$ we can create $2^{L+1}-1$ distinct labels, and we must therefore have $\frac{1}{4}n\log n\leq 2^{L+1}-1$ from which it follows that $L\geq \floor{\log N}+\floor{\log\floor{\log N}}-2$.
+%\end{proof}
+%
+%
+%\subsection{Upper bounds}
+%As for the lower bounds, we begin with the simple, non-unique case.
+%\begin{theorem} \label{theo:nonuniquesiblingallupper}
+%There exists a non-unique sibling labeling scheme for $\trees$
+%, and hence also for $\trees(N)$, $\trees(\Delta)$ for all $\Delta$ ,$\trees(D)$ for all $D$,  $\bintrees$, $\bintrees(N)$, $\caterpillars$ and $\caterpillars(N)$, 
+%whose worst-case label size is at most $\floor{\log n}$.
+%\end{theorem}
+%\begin{proof}
+%A graph with $n$ nodes has at most $n$ groups of siblings, so we can assign a unique binary string to each of these using at most $\floor{\log n}$ bits. Using the assigned string for a group of siblings as the label for every node within the group, the decoder can determine if two nodes are siblings by simply comparing their labels.
+%\end{proof}
+%
+%In the unique case, we present a whole collection of labeling schemes in a single theorem, since all the schemes are variations of the same theme.
+%\begin{theorem} \label{theo:uniquesiblingallupper}
+%For all $\Delta\geq 2$, there exists a unique sibling labeling scheme for $\trees(\Delta)$, whose worst-case label size is at most $\floor{\log n}+\floor{\log \floor{\log \Delta}} +1$.
+%In particular, there exists a unique sibling labeling scheme for $\bintrees$
+%, and hence also for $\bintrees(N)$ for all $N$, 
+%whose worst-case label size is at most $\floor{\log n}+1$.
+%Further, for  all $N$, there exists a unique sibling labeling scheme for $\trees(N)$
+%, and hence also for $\caterpillars(N)$, 
+%whose worst-case label size is at most $\floor{\log N} + \floor{\log \floor{\log \delta}}+1$.
+%Finally, there exists two unique sibling labeling schemes for $\trees$
+%, and hence also for $\trees(D)$ for all $D$ and $\caterpillars$, 
+%whose worst-case label sizes are at most  $\floor{\log n}+\ceil{\log\ceil{\log n}}+1$ and $\floor{\log n} + 2\ceil{\log \floor{\log \delta}}+1$, respectively. 
+%\end{theorem}
+%\begin{proof}
+%Given a tree with $n$ nodes and maximum degree $\delta$, associate with each sibling group a weight $w$ equal to the number of siblings in the group. Note that the sum of all these weight is $n$. Using \ref{lemm:halvorsen} from \ref{chap:generaltechniques}, we can create a unique label $l_1$ for each of these groups of siblings using at most $\floor{\log n-\log w}$ bits for a group of $w$ siblings. Next, using \ref{lemm:labels} from \ref{chap:generaltechniques} for a group of $w$ siblings, we can create a unique label $l_2$ for each individual sibling using $\floor{\log w}\leq\floor{\log\delta}$ bits. The total length of the concatenation $l_1\concat l_2$ is now at most $\floor{\log n-\log w}+\floor{\log w} \leq \floor{\log n}$, and if the decoder is able to retrieve the two sub-labels from the concatenation, it can determine if two nodes are siblings: this happens exactly when their first sub-labels are identical. It remains to provide the decoder with a way to determine how to retrieve the two sub-labels. How we do this depends on the graph family.
+%
+%In the case of $\trees(\Delta)$, since $|l_2|\leq \floor{\log w}\leq\floor{\log \Delta}$, we can %use \ref{lemm:labelssamesize} to
+%encode the length $|l_2|$ as binary number $l_0$ of length \emph{exactly} $\floor{\log\floor{\log\Delta}}+1$. We now create the final label $l=l_0 \concat l_1 \concat l_2$ of length at most $\floor{\log n}+\floor{\log\floor{\log\Delta}}+1$. Since the decoder already knows $\Delta$, it knows $|l_0|=\floor{\log\floor{\log\Delta}}+1$ and can therefore retrieve $l_0$, from which it can read $|l_2|$ and thereby retrieve $l_1$ and $l_2$.
+%
+%The case of $\bintrees$ follows immediately from the preceding by setting $\Delta=3$.
+%
+%In the case of $\trees(N)$, we start by creating the string $l_0= \zero^i\one$, where $i=\floor{\log N}- |l_1|-|l_2|\geq 0$. The concatenation $l_0\concat l_1\concat l_2$ now has length exactly equal to $\floor{\log N}+1$, and the bits belonging to $l_1\concat l_2$ are those coming after the first $\one$. Next, we use \ref{lemm:labels} to encode the length  $|l_2|$ as a  string $l_{-1}$ with $\floor{\log|l_2|}\leq \floor{\log \floor{\log \delta}}$ bits.  We now create the final label $l=l_{-1}\concat l_0 \concat l_1 \concat l_2$ of length at most $\floor{\log N}+\floor{\log\floor{\log\delta}}+1$. Since the decoder knows $N$, it knows $|l_0\concat l_1\concat l_2|$ and can therefore retrieve $l_{-1}$ and $l_0\concat l_1\concat l_2$. From the former it can retrieve $|l_2|$, and from the latter it can retrieve $l_1\concat l_2$, and thereby also $l_1$ and $l_2$.
+%
+%In the case of $\trees$, we create two labeling schemes. The first is a variant of the one for $\trees(N)$. We first create the string $l_0= \zero^i\one$, where $i=\floor{\log n}- |l_1|-|l_2|\geq 0$. The concatenation $l_0\concat l_1\concat l_2$ now has length exactly equal to $\floor{\log n}+1$, and the bits belonging to $l_1\concat l_2$ are those coming after the first $\one$. Next, we use \ref{lemm:labels} to encode the length  $|l_2|$ as a string $l_{-1}$ with $\floor{\log|l_2|}\leq \floor{\log \floor{\log\delta}}\leq \floor{\log \floor{\log(n-1)}}=\floor{\log(\ceil{\log n}-1)} = \ceil{\log\ceil{\log n}}-1$ bits. The concatenation $l'=l_{-1}\concat l_0\concat l_1\concat l_2$ now has length at most $\floor{\log n}+\ceil{\log\ceil{\log n}}$ bits. Finally, we prefix this with the string $l_{-2}=\zero^j\one$, where $j=\floor{\log n}+\ceil{\log\ceil{\log n}}-|l'|$, giving the final label $l=l_{-2}\concat l'$ of length exactly equal to $|l|=\floor{\log n}+\ceil{\log\ceil{\log n}}+1$, where the bits belonging to $l'$ are those coming after the first $\one$. Since the length $|l|$ uniquely determines $\floor{\log n}$, the decoder can infer $\floor{\log n}$ from the length of the label alone, and hence it can retrieve $l_{-2}\concat l_{-1}$ and $l_0\concat l_1\concat l_2$. From the former, it can infer $l_{-1}$ and hence $|l_2|$, and from the latter it can infer $l_1\concat l_2$, and thereby also $l_1$ and $l_2$.
+%
+%In the second labeling scheme for $\trees$, we use \ref{lemm:labels} to encode the length $|l_2|$ as a string $l_{0}$ with $\floor{\log|l_2|}\leq \floor{\log \floor{\log\delta}}$ bits. Next we encode $|l_0|$ as the string $l_1=\zero^{|l_0|}\one$  with $|l_0|+1 \leq \floor{\log \floor{\log\delta}}+1$ bits.  We now create the final label $l=l_{-1}\concat l_0 \concat l_1 \concat l_2$ of length at most $\floor{\log N}+2\floor{\log\floor{\log\delta}}+1$. Since $l_{-1}$ is self-delimiting, the decoder can retrieve $l_{-1}$ and $l_0\concat l_1\concat l_2$. From the former it can retrieve $|l_0|$, and from the latter it can then retrieve $l_0$ and $l_1\concat l_2$. From the former it can now retrieve $|l_2|$ and from the latter it can then retrieve $l_1$ and $l_2$.
+%\end{proof}
+%			
+%			\begin{thm}\label{thm:nonsib}
+%			For any $k \geq 1$ there exists a one-sided error non-sibling labeling scheme with guarantee $1- \frac{1}{2^k}$ for the class of trees using $k$-bit labels.
+%			\end{thm}
+%			\begin{proof}
+%			 The encoder  \begin{inparaenum}[1)] \item assigns the root $r$ a label  $\la( r)$ and  \item assigns the children of $r$ the label $\la$, where both $\la$ and $\la( r)$ are  chosen uniformly at random in  $ \{0 \dots 2^{k}-1 \}$. \end{inparaenum}
+%			 The encoder  applies the second step described recursively.
+%			  The decoder returns true if 	$\la( u) = \la(v)$.	
+%			  
+%			  If $u$ and $v$ are siblings in the $n$ node tree $T$, their labels are equal by the definition of the encoder.
+%			  Let $u$ and $v$ be two non-sibling nodes in $T$. Since  $\la(u)$ is chosen independently of    $\la(v)$:
+%			   $$prob(\la( u) = \la(v)) = \frac{1}{2^{k}} $$
+%			\end{proof}
+%			
+%			\begin{remark}
+%				By Theorem \ref{thm:nonsib} a label size of $k=\log n+O(1)$ suffice to have a one sided non sibling labeling scheme with  guarantee of  $1-\frac{1}{O( n)}$.
+%			\end{remark}
+%		On the other hand we show the following:
+%		\begin{thm}\label{lower-bound-one-sided-error}
+%		 Any  one-sided error  sibling-labeling scheme  with guarantee $p$ has a lower bound of  $\log n + \log p - O(1)$ bits.
+%		 \end{thm}
+%		 
+%		 
+%		 \begin{proof}
+%		 
+%		 
+%		 Assume that $n$ is an even integer.
+%		 We consider the n-node caterpillar $C_n$  with internal vertices $p_1,p_2 \dots p_{n / 2}$ and leaves $l_1, l_2 \dots l_{n /2}$ such that $l_j$ is attached to $p_j$.
+%		Consider a one-sided error sibling labeling scheme $\tuple{d,e}$ with guarantee $p$ for $C_n$.
+%		 Denote the number of distinct integers used by  $\tuple{d,e}$ as   $m \leq n$, which implies that the label size is at least $\log m$.
+%		 Let $X_i$ be the random variable defined for $ 2 \leq i \leq \frac{n}{2}-1$ by
+%		 
+%		 $$
+%			X_i =
+%				\left\{
+%				\begin{array}{ll}
+%					1  & \mbox{if there exists } j>i \mbox{ such that } \la(p_j) = \la(p_i) \\
+%					0 & \mbox{Otherwise}
+%				\end{array}
+%				\right.
+%		$$		 
+%		If $X_i =1$ then $d(\la(p_i),\la(l_{i-1})) = false$, since otherwise $d(\la(p_j),\la(l_{i-1})) = true$, in contrast to  Definition~\ref{dfn:one-sided} where the decoder returns $true$ only if the function should return $true$.
+%		
+%		Hence, $Pr(X_i = 1) \leq 1-p$ and $ \mathbb{E}(X_i) \leq 1-p $. Since $X_i =1$ enforces an error for the test of siblings on the query  $siblings(p_i,l_{i-1})$.
+%		
+%		Let $X = \sum_{i=2}^{\frac{n}{2}-1}X_i$. We can bound $\mathbb{E}X$ from above and below:
+%		
+%		We can bound $\mathbb{E}X$ from above by:
+%		 $$\mathbb{E}X =  \mathbb{E} \sum_{i=2}^{\frac{n}{2}-1}X_i  \leq   (\frac{n}{2}-2) \cdot (1-p)$$
+%		
+%		 $\mathbb{E}X$ can be bounded from below by the following argument:
+%		
+%		 For any fixed labeling $e_C$,  and any label $l \in {1 \dots m }$, let $p_{i_1} \dots p_{i_r}$ be the $r$ internal nodes labeled $l$, with $i_1 <i_2 \dots <i_r$.
+%			 We get $X_{i_1} = X_{i_2} =\dots =X_{i_{r}-1} =1$.
+%			 for $1 \leq k \leq m$, let $L_k$ be the subset of indices $a \in \{1,\dots,\frac{n}{2}  \}$ such that $u_a$ is given label $i$.
+%			 
+%		The total size of the $L_k$-sets is $\frac{n}{2} $. The random variables $X_a$ with indices $a$ in $L_k$ contribute with at least $\vert L_k \vert  - 1$ to  $X(e_C)$.
+%			  Note that the bound holds even for the case $\vert L_k \vert = 0$.
+%			   Hence the total contribution is at least: 
+%			   $$\sum_{i = k}^m (\vert L_k \vert -1 ) = \sum_{k = 1}^m \vert L_k \vert  - m = \frac{n}{2}  - m$$	
+%		 	And thus $ X( e_C) \geq \frac{n}{2}  - m > \frac{n}{2} - 2  - m$. 
+%			
+%			Moreover, since $\mathbb{E}X = \sum_{e_C} X(e_C) \cdot prob(e(C_n)= e_C)$, and $\sum_{e_C}  prob(e(C_n)= e_C )= 1 $ 
+%			
+%			$$ \mathbb{E}X >  \frac{n}{2} -2  - m  $$
+%			
+%			Comparing both bounds achieved we can get $ m >  p(\frac{n}{2} -2) $  which yields the proposed $ \log n + \log p -O(1)$ lower bound on $m$ and thus on the label size required.
+%		
+%		 \end{proof}
+%		

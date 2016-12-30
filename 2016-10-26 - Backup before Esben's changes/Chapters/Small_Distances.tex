@@ -1,0 +1,59 @@
+% !TEX root = ../Survey.tex
+
+\subsection{Small distances}\label{section:Sma}
+
+
+
+\subsection{NCA with fixed labels}
+\paragraph{Lower bound}
+		For labeling schemes with \emph{fixed naming}, Peleg proved that  $\Omega(\log^2 n)$ are necessary for any NCA labeling scheme.
+		He does so by noticing  \cite{Peleg05} the following connection between \emph{fixed-port} NCA, distance and separation level operations:
+			\begin{thm}\label{NCAconnection}
+			\mbox{}
+			\begin{enumerate}
+			\item $\la(SepLevel,Trees(n)) \leq \la(distance, Trees(n))+ \log n$
+			\item $\la(distance, Trees(n))+ \log n \leq \la(SepLevel,Trees(n))$
+			\item Let g(n) denote the maximum size of an identifier pre-assigned to any vertex in $Trees(n)$. If $\la(NCA, Trees(n)) = l(n) \cdot g(n)$ then $\la(SepLevel,Trees(n)) = l(n) \cdot (g(n) + \log n)$ 
+			\end{enumerate}
+			\end{thm}
+			\begin{proof}
+			Let $\tuple{e_{dist},d_{dist}}$ be any distance labeling scheme for $Trees(n)$.
+			We transform $e_{dist}$ by concatenating a prefix  $depth(v)$ to the label. The addition requires exactly $\log n$ extra bits.
+			The decoder can now compute $SepLevel(u,v)$ by   observing that 
+			$dist(u,v) = dist(u,NCA(u,v))+dist(v,NCA(u,v))$, and $depth(u)=depth(NCA(u,v))+dist(u,NCA(u,v))$ (the same formula holds by replacing $u$ with $v$).
+			 It is now clear that  $$depth(NCA(u,v)) =  \frac{depth(u)+depth(v)-dist(u,v)}{2} = SepLevel(u,v)$$
+			 The opposite direction is also attainable using similar arguments  by adding the same information on the separation level labels.
+			 
+			 The third argument simply modifies the NCA labeling scheme such that each identifier is attached a $depth(v)$ to its label. In this case, the decoder needs only to extract the depth of the returned NCA label.
+			 
+			\end{proof}
+			As mentioned in Section~\ref{section:distance}, distance labeling scheme have a lower bound of $\Omega(\log^2 n)$ on the size of the label, and by Theorem~\ref{NCAconnection}, that implies that so does NCA in the fixed port model.
+	
+
+	\subsection*{Other functions}
+	Peleg introduced the center operation, which essentially extends the NCA operation to three vertices (Definition~\ref{dfn:NCA}).
+	Korman and Kuttin  \cite{Korman07K} extend  the definition of labeling scheme such that alongside the encoder and decoder, they define a \emph{query} function.
+	Formally, given the labels $\la(u)$ and  $\la(v)$  of $u,v  \in  V $  outputs $Q(\la(u), \la(v))$ which is a vertex $ c \in V$.
+	The decoder is free to use $c$ to compute the query.
+	
+	Using the new definition, the design and fixed port models difference can be discarded, meaning, the label size required for NCA in the fixed  model is $\Theta(\log n)$.
+	In addition, they achieve the same bound for distance, routing in the fixed port model, and flow.
+	 
+
+	
+	\begin{open}
+	Can we alter  the labeling scheme for center (mentioned in Table~\ref{tab:priors}) such that it will enjoy a label of size $O(\log n)$ \cite{Peleg05}?
+	\end{open}
+	
+	\begin{open}
+	With respect to the query variant \cite{Korman07K}, the authors raise the following questions:
+			\begin{inparaenum} [\itshape a\upshape)] 
+			\item What can we benefit if  we  are allowed to receive multiple vertices from the query function?
+			 and 
+			\item w.r.t the last question, an interesting variant is to choose the  vertices one by one, i.e., the next vertex is determined using the knowledge obtained from the labels of previous vertices. What will be the result of applying this restriction?
+		\end{inparaenum}
+	\end{open}
+
+
+
+		

@@ -1,0 +1,890 @@
+%%% -*-BibTeX-*-
+%%% Do NOT edit. File created by BibTeX with style
+%%% ACM-Reference-Format-Journals [18-Jan-2012].
+
+\begin{thebibliography}{00}
+
+%%% ====================================================================
+%%% NOTE TO THE USER: you can override these defaults by providing
+%%% customized versions of any of these macros before the \bibliography
+%%% command.  Each of them MUST provide its own final punctuation,
+%%% except for \shownote{}, \showDOI{}, and \showURL{}.  The latter two
+%%% do not use final punctuation, in order to avoid confusing it with
+%%% the Web address.
+%%%
+%%% To suppress output of a particular field, define its macro to expand
+%%% to an empty string, or better, \unskip, like this:
+%%%
+%%% \newcommand{\showDOI}[1]{\unskip}   % LaTeX syntax
+%%%
+%%% \def \showDOI #1{\unskip}           % plain TeX syntax
+%%%
+%%% ====================================================================
+
+\ifx \showCODEN    \undefined \def \showCODEN     #1{\unskip}     \fi
+\ifx \showDOI      \undefined \def \showDOI       #1{{\tt DOI:}\penalty0{#1}\ }
+  \fi
+\ifx \showISBNx    \undefined \def \showISBNx     #1{\unskip}     \fi
+\ifx \showISBNxiii \undefined \def \showISBNxiii  #1{\unskip}     \fi
+\ifx \showISSN     \undefined \def \showISSN      #1{\unskip}     \fi
+\ifx \showLCCN     \undefined \def \showLCCN      #1{\unskip}     \fi
+\ifx \shownote     \undefined \def \shownote      #1{#1}          \fi
+\ifx \showarticletitle \undefined \def \showarticletitle #1{#1}   \fi
+\ifx \showURL      \undefined \def \showURL       #1{#1}          \fi
+
+\bibitem[\protect\citeauthoryear{Abiteboul, Alstrup, Kaplan, Milo, and
+  Rauhe}{Abiteboul et~al\mbox{.}}{2006}]%
+        {Alstrup06}
+{Serge Abiteboul}, {Stephen Alstrup}, {Haim Kaplan}, {Tova Milo}, {and} {Theis
+  Rauhe}. 2006.
+\newblock \showarticletitle{Compact Labeling Scheme for Ancestor Queries}.
+\newblock {\em SIAM J. Comput.\/} {35}, 6 (June 2006), 1295--1309.
+\newblock
+\showISSN{0097-5397}
+\showDOI{%
+\url{http://dx.doi.org/10.1137/S0097539703437211}}
+
+
+\bibitem[\protect\citeauthoryear{Abiteboul, Kaplan, and Milo}{Abiteboul
+  et~al\mbox{.}}{2001}]%
+        {Kaplan01}
+{Serge Abiteboul}, {Haim Kaplan}, {and} {Tova Milo}. 2001.
+\newblock \showarticletitle{Compact labeling schemes for ancestor queries}. In
+  {\em Proceedings of the twelfth annual ACM-SIAM symposium on Discrete
+  algorithms} {\em (SODA '01)}. Society for Industrial and Applied Mathematics,
+  Philadelphia, PA, USA, 547--556.
+\newblock
+\showISBNx{0-89871-490-7}
+\showURL{%
+\url{http://dl.acm.org/citation.cfm?id=365411.365529}}
+
+
+\bibitem[\protect\citeauthoryear{Abraham, Delling, Goldberg, and
+  Werneck}{Abraham et~al\mbox{.}}{2010}]%
+        {abraham2010hub}
+{Ittai Abraham}, {Daniel Delling}, {Andrew~V Goldberg}, {and} {Renato~F
+  Werneck}. 2010.
+\newblock \showarticletitle{A Hub-Based Labeling Algorithm for Shortest Paths
+  on Road Networks}.
+\newblock  (2010).
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Abraham, Delling, Goldberg, and
+  Werneck}{Abraham et~al\mbox{.}}{2012}]%
+        {abraham2012hierarchical}
+{Ittai Abraham}, {Daniel Delling}, {Andrew~V Goldberg}, {and} {Renato~F
+  Werneck}. 2012.
+\newblock \showarticletitle{Hierarchical hub labelings for shortest paths}.
+\newblock In {\em Algorithms--ESA 2012}. Springer, 24--35.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Abraham, Gavoille, Goldberg, and
+  Malkhi}{Abraham et~al\mbox{.}}{2006}]%
+        {abraham2006routing}
+{Ittai Abraham}, {Cyril Gavoille}, {Andrew~V Goldberg}, {and} {Dahlia Malkhi}.
+  2006.
+\newblock \showarticletitle{Routing in networks with low doubling dimension}.
+  In {\em Distributed Computing Systems, 2006. ICDCS 2006. 26th IEEE
+  International Conference on}. IEEE, 75--75.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Abraham, Gavoille, Malkhi, Nisan, and
+  Thorup}{Abraham et~al\mbox{.}}{2004}]%
+        {abraham2004compact}
+{Ittai Abraham}, {Cyril Gavoille}, {Dahlia Malkhi}, {Noam Nisan}, {and} {Mikkel
+  Thorup}. 2004.
+\newblock \showarticletitle{Compact name-independent routing with minimum
+  stretch}. In {\em Proceedings of the sixteenth annual ACM symposium on
+  Parallelism in algorithms and architectures}. ACM, 20--24.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Abraham and Malkhi}{Abraham and
+  Malkhi}{2005}]%
+        {abraham2005name}
+{Ittai Abraham} {and} {Dahlia Malkhi}. 2005.
+\newblock \showarticletitle{Name independent routing for growth bounded
+  networks}. In {\em Proceedings of the seventeenth annual ACM symposium on
+  Parallelism in algorithms and architectures}. ACM, 49--55.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Adjiashvili and Rotbart}{Adjiashvili and
+  Rotbart}{2014}]%
+        {adjiashvili2014labeling}
+{David Adjiashvili} {and} {Noy Rotbart}. 2014.
+\newblock \showarticletitle{Labeling schemes for bounded degree graphs}.
+\newblock In {\em Automata, Languages, and Programming}. Springer, 375--386.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Aho, Hopcroft, and Ullman}{Aho
+  et~al\mbox{.}}{1973}]%
+        {aho}
+{Alfred~V. Aho}, {John~E. Hopcroft}, {and} {Jeffrey~D. Ullman}. 1973.
+\newblock \showarticletitle{On finding lowest common ancestors in trees}. In
+  {\em Proceedings of the fifth annual ACM symposium on Theory of computing}
+  {\em (STOC '73)}. ACM, New York, NY, USA, 253--265.
+\newblock
+\showDOI{%
+\url{http://dx.doi.org/10.1145/800125.804056}}
+
+
+\bibitem[\protect\citeauthoryear{Alstrup, Bille, and Rauhe}{Alstrup
+  et~al\mbox{.}}{2005}]%
+        {Alstrup05}
+{Stephen Alstrup}, {Philip Bille}, {and} {Theis Rauhe}. 2005.
+\newblock \showarticletitle{Labeling Schemes for Small Distances in Trees}.
+\newblock {\em SIAM J. Discret. Math.\/} {19}, 2 (June 2005), 448--462.
+\newblock
+\showISSN{0895-4801}
+\showDOI{%
+\url{http://dx.doi.org/10.1137/S0895480103433409}}
+
+
+\bibitem[\protect\citeauthoryear{Alstrup, Bistrup~Halvorsen, and
+  Green~Larsen}{Alstrup et~al\mbox{.}}{2014}]%
+        {Green14}
+{Stephen Alstrup}, {Esben Bistrup~Halvorsen}, {and} {Kasper Green~Larsen}.
+  2014.
+\newblock \showarticletitle{Near-optimal labeling schemes for nearest common
+  ancestors}. In {\em Proceedings of the thirty first annual ACM-SIAM symposium
+  on Discrete algorithms} {\em (SODA '14)}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Alstrup, Dahlgaard, and Knudsen}{Alstrup
+  et~al\mbox{.}}{2015}]%
+        {alstrup2015optimal}
+{Stephen Alstrup}, {S{\o}ren Dahlgaard}, {and} {Mathias B{\ae}k~Tejs Knudsen}.
+  2015.
+\newblock \showarticletitle{Optimal induced universal graphs and adjacency
+  labeling for trees}. In {\em Foundations of Computer Science (FOCS), 2015
+  IEEE 56th Annual Symposium on}. IEEE, 1311--1326.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Alstrup, Gavoille, Kaplan, and Rauhe}{Alstrup
+  et~al\mbox{.}}{2002}]%
+        {Alstrup02NCA}
+{Stephen Alstrup}, {Cyril Gavoille}, {Haim Kaplan}, {and} {Theis Rauhe}. 2002.
+\newblock \showarticletitle{Nearest Common Ancestors: A survey and a new
+  distributed algorithm}. In {\em Proceedings of the fourteenth annual ACM
+  symposium on Parallel algorithms and architectures}. ACM PRESS, 258--264.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Alstrup, Laurdisen, Sommerland, and
+  Thorup}{Alstrup et~al\mbox{.}}{1997}]%
+        {alstrup1997finding}
+{Stephen Alstrup}, {Peter Laurdisen}, {Peter Sommerland}, {and} {Mikkel
+  Thorup}. 1997.
+\newblock \showarticletitle{Finding cores of limited length}.
+\newblock {\em Lecture notes in computer science\/} (1997), 45--54.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Alstrup and Rauhe}{Alstrup and Rauhe}{2002}]%
+        {Alstrup02}
+{Stephen Alstrup} {and} {Theis Rauhe}. 2002.
+\newblock \showarticletitle{Small Induced-Universal Graphs and Compact Implicit
+  Graph Representations}. In {\em Proceedings of the 43rd Symposium on
+  Foundations of Computer Science} {\em (FOCS '02)}. IEEE Computer Society,
+  Washington, DC, USA, 53--62.
+\newblock
+\showISBNx{0-7695-1822-2}
+\showURL{%
+\url{http://dl.acm.org/citation.cfm?id=645413.652151}}
+
+
+\bibitem[\protect\citeauthoryear{Bhatt, Graham~Chung, Leighton, and
+  Rosenberg}{Bhatt et~al\mbox{.}}{1989}]%
+        {BCLR}
+{Sandeep Bhatt}, {Fan~Rong Graham~Chung}, {Thomson Leighton}, {and} {Arnold
+  Rosenberg}. 1989.
+\newblock \showarticletitle{{Universal Graphs for Bounded-Degree Trees and
+  Planar Graphs}}.
+\newblock {\em SIAM Journal on Discrete Mathematics\/} {2}, 2 (1989), 145--155.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Bistrup~Halvorsen}{Bistrup~Halvorsen}{2013}]%
+        {Esben13}
+{Esben Bistrup~Halvorsen}. 2013.
+\newblock {\em {Graph labeling schemes}}.
+\newblock Master's\ thesis. University of Copenhagen, Universitetsparken 5,
+  Copenhagen.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Blin, Dolev, Potop-Butucaru, and
+  Rovedakis}{Blin et~al\mbox{.}}{2010}]%
+        {blin2010fast}
+{L{\'e}lia Blin}, {Shlomi Dolev}, {Maria~Gradinariu Potop-Butucaru}, {and}
+  {Stephane Rovedakis}. 2010.
+\newblock \showarticletitle{Fast Self-Stabilizing Minimum Spanning Tree
+  Construction}.
+\newblock In {\em Distributed Computing}. Springer, 480--494.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Bonichon, Gavoille, and Labourel}{Bonichon
+  et~al\mbox{.}}{2006}]%
+        {Gavoille06}
+{Nicolas Bonichon}, {Cyril Gavoille}, {and} {Arnaud Labourel}. 2006.
+\newblock \showarticletitle{Short labels by traversal and jumping}. In {\em
+  Proceedings of the 13th international conference on Structural Information
+  and Communication Complexity} {\em (SIROCCO'06)}. Springer-Verlag, Berlin,
+  Heidelberg, 143--156.
+\newblock
+\showISBNx{3-540-35474-3, 978-3-540-35474-1}
+\showDOI{%
+\url{http://dx.doi.org/10.1007/11780823_12}}
+
+
+\bibitem[\protect\citeauthoryear{Breuer and Folkman}{Breuer and
+  Folkman}{1967}]%
+        {Breuer67}
+{Melvin~A. Breuer} {and} {John Folkman}. 1967.
+\newblock \showarticletitle{{An unexpected result in coding the vertices of a
+  graph}}.
+\newblock {\it J. Math. Anal. Appl.}  {20} (1967), 583--600.
+\newblock
+Issue 3.
+\showDOI{%
+\url{http://dx.doi.org/10.1016/0022-247X(67)90082-0}}
+
+
+\bibitem[\protect\citeauthoryear{Caminiti, Finocchi, and Petreschi}{Caminiti
+  et~al\mbox{.}}{2009}]%
+        {caminiti2009informative}
+{Saverio Caminiti}, {Irene Finocchi}, {and} {Rossella Petreschi}. 2009.
+\newblock \showarticletitle{Informative Labeling Schemes for the Least Common
+  Ancestor Problem.}. In {\em ICTCS}. 66--70.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Chen, Matsumoto, Wang, Zhang, and Zhang}{Chen
+  et~al\mbox{.}}{1994}]%
+        {chen1994short}
+{Boliong Chen}, {Makoto Matsumoto}, {Jianfang Wang}, {Zhongfu Zhang}, {and}
+  {Jianxun Zhang}. 1994.
+\newblock \showarticletitle{A short proof of Nash-Williams' theorem for the
+  arboricity of a graph}.
+\newblock {\em Graphs and Combinatorics\/} {10}, 1 (1994), 27--28.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Chung}{Chung}{1989}]%
+        {chung1989separator}
+{Fan~RK Chung}. 1989.
+\newblock {\em Separator theorems and their applications}.
+\newblock Forschungsinst. f{\"u}r Diskrete Mathematik.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Cohen, Kaplan, and Milo}{Cohen
+  et~al\mbox{.}}{2002}]%
+        {Cohen02}
+{Edith Cohen}, {Haim Kaplan}, {and} {Tova Milo}. 2002.
+\newblock \showarticletitle{Labeling dynamic XML trees}. In {\em Proceedings of
+  the twenty-first ACM SIGMOD-SIGACT-SIGART symposium on Principles of database
+  systems} {\em (PODS '02)}. ACM, New York, NY, USA, 271--281.
+\newblock
+\showISBNx{1-58113-507-6}
+\showDOI{%
+\url{http://dx.doi.org/10.1145/543613.543648}}
+
+
+\bibitem[\protect\citeauthoryear{Cohen, Kaplan, and Milo}{Cohen
+  et~al\mbox{.}}{2010a}]%
+        {cohen10journal}
+{Edith Cohen}, {Haim Kaplan}, {and} {Tova Milo}. 2010a.
+\newblock \showarticletitle{Labeling dynamic XML trees}.
+\newblock {\it SIAM J. Comput.} {39}, 5 (2010), 2048--2074.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Cohen, Kaplan, and Milo}{Cohen
+  et~al\mbox{.}}{2010b}]%
+        {cohen2010labeling}
+{Edith Cohen}, {Haim Kaplan}, {and} {Tova Milo}. 2010b.
+\newblock \showarticletitle{Labeling dynamic XML trees}.
+\newblock {\it SIAM J. Comput.} {39}, 5 (2010), 2048--2074.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Cormen, Stein, Rivest, and Leiserson}{Cormen
+  et~al\mbox{.}}{2001}]%
+        {Cormen01}
+{Thomas~H. Cormen}, {Clifford Stein}, {Ronald~L. Rivest}, {and} {Charles~E.
+  Leiserson}. 2001.
+\newblock {\em Introduction to Algorithms\/} (2nd ed.).
+\newblock McGraw-Hill Higher Education.
+\newblock
+\showISBNx{0070131511}
+
+
+\bibitem[\protect\citeauthoryear{Courcelle, Gavoille, Kant{\'e}, and
+  Twigg}{Courcelle et~al\mbox{.}}{2007}]%
+        {courcelle2007forbidden}
+{Bruno Courcelle}, {Cyril Gavoille}, {M Kant{\'e}}, {and} {Andrew Twigg}. 2007.
+\newblock \showarticletitle{Forbidden-set labeling on graphs}. In {\em 2nd
+  Workshop on Locality Preserving Distributed Computing Methods (LOCALITY)",
+  Co-located with PODC}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Cover and Thomas}{Cover and Thomas}{2012}]%
+        {cover2012elements}
+{Thomas~M Cover} {and} {Joy~A Thomas}. 2012.
+\newblock {\em Elements of information theory}.
+\newblock John Wiley \& Sons.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Dahlgaard, Knudsen, and Rotbart}{Dahlgaard
+  et~al\mbox{.}}{2014a}]%
+        {knudsen2014private}
+{S{\o}ren Dahlgaard}, {Mathias B{\ae}k~Tejs Knudsen}, {and} {Noy Rotbart}.
+  2014a.
+\newblock private communication.   (2014).
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Dahlgaard, Knudsen, and Rotbart}{Dahlgaard
+  et~al\mbox{.}}{2014b}]%
+        {dahlgaard2014dynamic}
+{S{\o}ren Dahlgaard}, {Mathias B{\ae}k~Tejs Knudsen}, {and} {Noy Rotbart}.
+  2014b.
+\newblock \showarticletitle{Dynamic and Multi-functional Labeling Schemes}.
+\newblock {\em arXiv preprint arXiv:1404.4982\/} (2014).
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Dahlgaard, Knudsen, and Rotbart}{Dahlgaard
+  et~al\mbox{.}}{2014c}]%
+        {dahlgaard2014improved}
+{S{\o}ren Dahlgaard}, {Mathias B{\ae}k~Tejs Knudsen}, {and} {Noy Rotbart}.
+  2014c.
+\newblock \showarticletitle{Improved ancestry labeling scheme for trees}.
+\newblock {\em arXiv preprint arXiv:1407.5011\/} (2014).
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Dom}{Dom}{2007}]%
+        {Dom07}
+{Michael Dom}. 2007.
+\newblock \showarticletitle{Compact Routing}.
+\newblock In {\em Algorithms for Sensor and Ad Hoc Networks}, {Dorothea Wagner}
+  {and} {Roger Wattenhofer} (Eds.). Lecture Notes in Computer Science, Vol.
+  4621. Springer Berlin Heidelberg, 187--202.
+\newblock
+\showISBNx{978-3-540-74990-5}
+\showDOI{%
+\url{http://dx.doi.org/10.1007/978-3-540-74991-2_10}}
+
+
+\bibitem[\protect\citeauthoryear{Fischer}{Fischer}{2009}]%
+        {Fischer09}
+{Johannes Fischer}. 2009.
+\newblock \showarticletitle{Short Labels for Lowest Common Ancestors in Trees}.
+  In {\em ESA}. 752--763.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Fraigniaud and Gavoille}{Fraigniaud and
+  Gavoille}{2001}]%
+        {Fraigniaud01}
+{Pierre Fraigniaud} {and} {Cyril Gavoille}. 2001.
+\newblock \showarticletitle{Routing in Trees}. In {\em IN 28 TH INTERNATIONAL
+  COLLOQUIUM ON AUTOMATA, LANGUAGES AND PROGRAMMING (ICALP}. Springer,
+  757--772.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Fraigniaud and Gavoille}{Fraigniaud and
+  Gavoille}{2002}]%
+        {fraigniaud2002space}
+{Pierre Fraigniaud} {and} {Cyril Gavoille}. 2002.
+\newblock \showarticletitle{A space lower bound for routing in trees}.
+\newblock In {\em STACS 2002}. Springer, 65--75.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Fraigniaud and Korman}{Fraigniaud and
+  Korman}{2009}]%
+        {fraigniaud2009}
+{Pierre Fraigniaud} {and} {Amos Korman}. 2009.
+\newblock \showarticletitle{On randomized representations of graphs using short
+  labels}. In {\em Proceedings of the twenty-first annual symposium on
+  Parallelism in algorithms and architectures}. ACM, 131--137.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Fraigniaud and Korman}{Fraigniaud and
+  Korman}{2010a}]%
+        {Fraigniaud10}
+{Pierre Fraigniaud} {and} {Amos Korman}. 2010a.
+\newblock \showarticletitle{Compact Ancestry Labeling Schemes for XML Trees}.
+  In {\em In Proc. 21st ACM-SIAM Symp. on Discrete Algorithms (SODA}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Fraigniaud and Korman}{Fraigniaud and
+  Korman}{2010b}]%
+        {Korman10}
+{Pierre Fraigniaud} {and} {Amos Korman}. 2010b.
+\newblock \showarticletitle{An optimal ancestry scheme and small universal
+  posets}. In {\em Proceedings of the 42nd ACM symposium on Theory of
+  computing} {\em (STOC '10)}. ACM, New York, NY, USA, 611--620.
+\newblock
+\showISBNx{978-1-4503-0050-6}
+\showDOI{%
+\url{http://dx.doi.org/10.1145/1806689.1806773}}
+
+
+\bibitem[\protect\citeauthoryear{Freedman, Gawrychowski, Nicholson, and
+  Weimann}{Freedman et~al\mbox{.}}{2016}]%
+        {freedman2016optimal}
+{Ofer Freedman}, {Pawe{\l} Gawrychowski}, {Patrick~K Nicholson}, {and} {Oren
+  Weimann}. 2016.
+\newblock \showarticletitle{Optimal Distance Labeling Schemes for Trees}.
+\newblock {\em arXiv preprint arXiv:1608.00212\/} (2016).
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Gabow, Bentley, and Tarjan}{Gabow
+  et~al\mbox{.}}{1984}]%
+        {gabow}
+{Harold~N. Gabow}, {Jon~Louis Bentley}, {and} {Robert~E. Tarjan}. 1984.
+\newblock \showarticletitle{Scaling and related techniques for geometry
+  problems}. In {\em Proceedings of the sixteenth annual ACM symposium on
+  Theory of computing} {\em (STOC '84)}. ACM, New York, NY, USA, 135--143.
+\newblock
+\showISBNx{0-89791-133-4}
+\showDOI{%
+\url{http://dx.doi.org/10.1145/800057.808675}}
+
+
+\bibitem[\protect\citeauthoryear{Gavoille}{Gavoille}{2001}]%
+        {gavoille2001routing}
+{Cyril Gavoille}. 2001.
+\newblock \showarticletitle{Routing in distributed networks: Overview and open
+  problems}.
+\newblock {\em ACM SIGACT News\/} {32}, 1 (2001), 36--52.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Gavoille and Gengler}{Gavoille and
+  Gengler}{2001}]%
+        {gavoille2001space}
+{Cyril Gavoille} {and} {Marc Gengler}. 2001.
+\newblock \showarticletitle{Space-efficiency for routing schemes of stretch
+  factor three}.
+\newblock {\it J. Parallel and Distrib. Comput.} {61}, 5 (2001), 679--687.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Gavoille, Katz, Katz, Paul, and
+  Peleg}{Gavoille et~al\mbox{.}}{2000}]%
+        {Katz00}
+{Cyril Gavoille}, {Michal Katz}, {Nir~A. Katz}, {Christophe Paul}, {and} {David
+  Peleg}. 2000.
+\newblock Approximate Distance Labeling Schemes (Extended Abstract).
+\newblock   (2000).
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Gavoille and Labourel}{Gavoille and
+  Labourel}{2007a}]%
+        {gavoille07}
+{Cyril Gavoille} {and} {Arnaud Labourel}. 2007a.
+\newblock \showarticletitle{Distributed relationship schemes for trees}.
+\newblock {\em Algorithms and Computation\/} (2007), 728--738.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Gavoille and Labourel}{Gavoille and
+  Labourel}{2007b}]%
+        {gavoille2007shorter}
+{Cyril Gavoille} {and} {Arnaud Labourel}. 2007b.
+\newblock \showarticletitle{Shorter implicit representation for planar graphs
+  and bounded treewidth graphs}.
+\newblock In {\em Algorithms--ESA 2007}. Springer, 582--593.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Gavoille and Paul}{Gavoille and Paul}{2001}]%
+        {Paul01}
+{Cyril Gavoille} {and} {Christophe Paul}. 2001.
+\newblock \showarticletitle{Split decomposition and distance labelling: an
+  optimal scheme for distance hereditary graphs}.
+\newblock {\em Electronic Notes in Discrete Mathematics\/}  {10} (2001),
+  117--120.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Gavoille and Peleg}{Gavoille and
+  Peleg}{2003}]%
+        {Peleg03}
+{Cyril Gavoille} {and} {David Peleg}. 2003.
+\newblock \showarticletitle{Compact and localized distributed data structures}.
+\newblock {\em Distrib. Comput.\/} {16}, 2-3 (Sept. 2003), 111--120.
+\newblock
+\showISSN{0178-2770}
+\showDOI{%
+\url{http://dx.doi.org/10.1007/s00446-002-0073-5}}
+
+
+\bibitem[\protect\citeauthoryear{Gavoille, Peleg, P{\'e}rennes, and
+  Raz}{Gavoille et~al\mbox{.}}{2001}]%
+        {Gavoille2001}
+{Cyril Gavoille}, {David Peleg}, {St{\'e}phane P{\'e}rennes}, {and} {Ran Raz}.
+  2001.
+\newblock \showarticletitle{Distance labeling in graphs}. In {\em Proceedings
+  of the twelfth annual ACM-SIAM symposium on Discrete algorithms} {\em (SODA
+  '01)}. Society for Industrial and Applied Mathematics, Philadelphia, PA, USA,
+  210--219.
+\newblock
+\showISBNx{0-89871-490-7}
+\showURL{%
+\url{http://dl.acm.org/citation.cfm?id=365411.365447}}
+
+
+\bibitem[\protect\citeauthoryear{Gavoille, Peleg, P{\'e}rennesc, and
+  Razb}{Gavoille et~al\mbox{.}}{2004}]%
+        {gavoillea2004distance}
+{Cyril Gavoille}, {David Peleg}, {St{\'e}phane P{\'e}rennesc}, {and} {Ran
+  Razb}. 2004.
+\newblock \showarticletitle{Distance labeling in graphs}.
+\newblock {\em Journal of Algorithms\/}  {53} (2004), 85--112.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Gavoille and P{\'e}renn{\`e}s}{Gavoille and
+  P{\'e}renn{\`e}s}{1996}]%
+        {gavoille96}
+{Cyril Gavoille} {and} {St{\'e}phane P{\'e}renn{\`e}s}. 1996.
+\newblock \showarticletitle{Memory requirement for routing in distributed
+  networks}. In {\em Proceedings of the fifteenth annual ACM symposium on
+  Principles of distributed computing}. ACM, 125--133.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Ghaleb and Mohammed}{Ghaleb and
+  Mohammed}{2013}]%
+        {ghaleb2013novel}
+{Taher~Ahmed Ghaleb} {and} {Salahadin Mohammed}. 2013.
+\newblock \showarticletitle{Novel scheme for labeling XML trees based on
+  bits-masking and logical matching}. In {\em Computer and Information
+  Technology (WCCIT), 2013 World Congress on}. IEEE, 1--5.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{H{\"a}rder, Haustein, Mathis, and
+  Wagner}{H{\"a}rder et~al\mbox{.}}{2007}]%
+        {harder2007node}
+{Theo H{\"a}rder}, {Michael Haustein}, {Christian Mathis}, {and} {Markus
+  Wagner}. 2007.
+\newblock \showarticletitle{Node labeling schemes for dynamic XML documents
+  reconsidered}.
+\newblock {\em Data \& Knowledge Engineering\/} {60}, 1 (2007), 126--149.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Harel and Tarjan}{Harel and Tarjan}{1984}]%
+        {hareltarjan}
+{Dov Harel} {and} {Robert~Endre Tarjan}. 1984.
+\newblock \showarticletitle{Fast Algorithms for Finding Nearest Common
+  Ancestors}.
+\newblock {\it SIAM J. Comput.} {13}, 2 (1984), 338--355.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Jordan}{Jordan}{1869}]%
+        {jordan1869assemblages}
+{Camille Jordan}. 1869.
+\newblock \showarticletitle{Sur les assemblages de lignes.}
+\newblock {\em Journal f{\"u}r die reine und angewandte Mathematik\/}  {70}
+  (1869), 185--190.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Kannan, Naor, and Rudich}{Kannan
+  et~al\mbox{.}}{1992}]%
+        {Kannan92}
+{Sampath Kannan}, {Moni Naor}, {and} {Steven Rudich}. 1992.
+\newblock \showarticletitle{Implicit Representation of Graphs}. In {\em SIAM
+  Journal On Discrete Mathematics}. 334--343.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Kao, Li, and Wang}{Kao et~al\mbox{.}}{2007}]%
+        {Kano07}
+{Ming-Yang Kao}, {Xiang-Yang Li}, {and} {Weizhao Wang}. 2007.
+\newblock \showarticletitle{Average case analysis for tree labelling schemes}.
+\newblock {\em Theoretical Computer Science\/} {378}, 3 (2007), 271 -- 291.
+\newblock
+\showISSN{0304-3975}
+\showDOI{%
+\url{http://dx.doi.org/10.1016/j.tcs.2007.02.066}}
+\newblock
+\shownote{Algorithms and Computation.}
+
+
+\bibitem[\protect\citeauthoryear{Kaplan, Milo, and Shabo}{Kaplan
+  et~al\mbox{.}}{2002}]%
+        {kaplan2002comparison}
+{Haim Kaplan}, {Tova Milo}, {and} {Ronen Shabo}. 2002.
+\newblock \showarticletitle{A comparison of labeling schemes for ancestor
+  queries}. In {\em Proceedings of the thirteenth annual ACM-SIAM symposium on
+  Discrete algorithms}. Society for Industrial and Applied Mathematics,
+  954--963.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Katz, Katz, Korman, and Peleg}{Katz
+  et~al\mbox{.}}{2004}]%
+        {katz2004labeling}
+{Michal Katz}, {Nir~A Katz}, {Amos Korman}, {and} {David Peleg}. 2004.
+\newblock \showarticletitle{Labeling schemes for flow and connectivity}.
+\newblock {\it SIAM J. Comput.} {34}, 1 (2004), 23--40.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Korman}{Korman}{2008}]%
+        {korman2008improved}
+{Amos Korman}. 2008.
+\newblock \showarticletitle{Improved compact routing schemes for dynamic
+  trees}. In {\em PODC '08}. ACM, 185--194.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Korman and Kutten}{Korman and Kutten}{2007}]%
+        {Korman07K}
+{Amos Korman} {and} {Shay Kutten}. 2007.
+\newblock \showarticletitle{Labeling schemes with queries}. In {\em Proceedings
+  of the 14th international conference on Structural information and
+  communication complexity} {\em (SIROCCO'07)}. Springer-Verlag, Berlin,
+  Heidelberg, 109--123.
+\newblock
+\showISBNx{978-3-540-72918-1}
+\showURL{%
+\url{http://dl.acm.org/citation.cfm?id=1760631.1760645}}
+
+
+\bibitem[\protect\citeauthoryear{Korman and Peleg}{Korman and Peleg}{2006}]%
+        {korman2006dynamic}
+{Amos Korman} {and} {David Peleg}. 2006.
+\newblock \showarticletitle{Dynamic routing schemes for general graphs}.
+\newblock {\em Automata, Languages and Programming\/} (2006), 619--630.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Korman and Peleg}{Korman and Peleg}{2007}]%
+        {korman2007compact}
+{Amos Korman} {and} {David Peleg}. 2007.
+\newblock \showarticletitle{Compact separator decompositions in dynamic trees
+  and applications to labeling schemes}.
+\newblock In {\em Distributed Computing}. Springer, 313--327.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Korman, Peleg, and Rodeh}{Korman
+  et~al\mbox{.}}{2010}]%
+        {Rodeh10}
+{Amos Korman}, {David Peleg}, {and} {Yoav Rodeh}. 2010.
+\newblock \showarticletitle{Constructing Labeling Schemes through Universal
+  Matrices}.
+\newblock {\em Algorithmica\/} {57}, 4 (Aug. 2010), 641--652.
+\newblock
+\showISSN{0178-4617}
+\showDOI{%
+\url{http://dx.doi.org/10.1007/s00453-008-9226-7}}
+
+
+\bibitem[\protect\citeauthoryear{Krioukov, Fall, Brady, et~al\mbox{.}}{Krioukov
+  et~al\mbox{.}}{2007}]%
+        {krioukov2007compact}
+{Dmitri Krioukov}, {Kevin Fall}, {Arthur Brady}, {and} {others}. 2007.
+\newblock \showarticletitle{On compact routing for the Internet}.
+\newblock {\em ACM SIGCOMM Computer Communication Review\/} {37}, 3 (2007),
+  41--52.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Krioukov, Fall, and Yang}{Krioukov
+  et~al\mbox{.}}{2004}]%
+        {krioukov2004compact}
+{Dmitri Krioukov}, {Kevin Fall}, {and} {Xiaowei Yang}. 2004.
+\newblock \showarticletitle{Compact routing on Internet-like graphs}. In {\em
+  INFOCOM 2004. Twenty-third AnnualJoint Conference of the IEEE Computer and
+  Communications Societies}, Vol.~1. IEEE.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Lewenstein, Munro, and Raman}{Lewenstein
+  et~al\mbox{.}}{2013}]%
+        {lewenstein2013succinct}
+{Moshe Lewenstein}, {J~Ian Munro}, {and} {Venkatesh Raman}. 2013.
+\newblock \showarticletitle{Succinct data structures for representing
+  equivalence classes}.
+\newblock In {\em Algorithms and Computation}. Springer, 502--512.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Li and Ling}{Li and Ling}{2005}]%
+        {li2005qed}
+{Changqing Li} {and} {Tok~Wang Ling}. 2005.
+\newblock \showarticletitle{QED: a novel quaternary encoding to completely
+  avoid re-labeling in XML updates}. In {\em Proceedings of the 14th ACM
+  international conference on Information and knowledge management}. ACM,
+  501--508.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Lu}{Lu}{2013}]%
+        {lu2013xml}
+{Jiaheng Lu}. 2013.
+\newblock \showarticletitle{XML Labeling Scheme}.
+\newblock In {\em An Introduction to XML Query Processing and Keyword Search}.
+  Springer, 9--32.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Lu, Ling, Chan, and Chen}{Lu
+  et~al\mbox{.}}{2005}]%
+        {lu2005region}
+{Jiaheng Lu}, {Tok~Wang Ling}, {Chee-Yong Chan}, {and} {Ting Chen}. 2005.
+\newblock \showarticletitle{From region encoding to extended dewey: on
+  efficient processing of XML twig pattern matching}. In {\em Proceedings of
+  the 31st international conference on Very large data bases}. VLDB Endowment,
+  193--204.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Muller}{Muller}{1988}]%
+        {Muller1988}
+{John~Harold Muller}. 1988.
+\newblock {\em Local structure in graph classes}.
+\newblock Ph.D. Dissertation. Georgia Institute of Technology, Atlanta, GA,
+  USA.
+\newblock
+\newblock
+\shownote{Order No: GAX88-11342.}
+
+
+\bibitem[\protect\citeauthoryear{Nash-Williams}{Nash-Williams}{1961}]%
+        {nash1961edge}
+{Crispin Nash-Williams}. 1961.
+\newblock \showarticletitle{Edge-disjoint spanning trees of finite graphs}.
+\newblock {\em Journal of the London Mathematical Society\/} {1}, 1 (1961),
+  445--450.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{OConnor and Roantree}{OConnor and
+  Roantree}{2012}]%
+        {o2012scooter}
+{Martin~F OConnor} {and} {Mark Roantree}. 2012.
+\newblock \showarticletitle{SCOOTER: A Compact and Scalable Dynamic Labeling
+  Scheme for XML Updates}. In {\em Database and Expert Systems Applications}.
+  Springer, 26--40.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{O'Neil, O'Neil, Pal, Cseri, Schaller, and
+  Westbury}{O'Neil et~al\mbox{.}}{2004}]%
+        {o2004ordpaths}
+{Patrick O'Neil}, {Elizabeth O'Neil}, {Shankar Pal}, {Istvan Cseri}, {Gideon
+  Schaller}, {and} {Nigel Westbury}. 2004.
+\newblock \showarticletitle{ORDPATHs: insert-friendly XML node labels}. In {\em
+  Proceedings of the 2004 ACM SIGMOD international conference on Management of
+  data}. ACM, 903--908.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Peleg}{Peleg}{1999}]%
+        {peleg1999proximity}
+{David Peleg}. 1999.
+\newblock \showarticletitle{Proximity-preserving labeling schemes and their
+  applications}. In {\em Graph-Theoretic Concepts in Computer Science}.
+  Springer, 30--41.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Peleg}{Peleg}{2000a}]%
+        {peleg2000informative}
+{David Peleg}. 2000a.
+\newblock \showarticletitle{Informative labeling schemes for graphs}.
+\newblock In {\em Mathematical Foundations of Computer Science 2000}. Springer,
+  579--588.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Peleg}{Peleg}{2000b}]%
+        {Peleg00}
+{David Peleg}. 2000b.
+\newblock \showarticletitle{Proximity-preserving labeling schemes}.
+\newblock {\em Journal of Graph Theory\/} {33}, 3 (2000), 167--176.
+\newblock
+\showISSN{1097-0118}
+\showDOI{%
+\url{http://dx.doi.org/10.1002/(SICI)1097-0118(200003)33:3<167::AID-JGT7>3.0.CO;2-5}}
+
+
+\bibitem[\protect\citeauthoryear{Peleg}{Peleg}{2005}]%
+        {Peleg05}
+{David Peleg}. 2005.
+\newblock \showarticletitle{Informative labeling schemes for graphs}.
+\newblock {\em Theor. Comput. Sci.\/} {340}, 3 (Aug. 2005), 577--593.
+\newblock
+\showISSN{0304-3975}
+\showDOI{%
+\url{http://dx.doi.org/10.1016/j.tcs.2005.03.015}}
+
+
+\bibitem[\protect\citeauthoryear{Rado}{Rado}{1964}]%
+        {rado1964universal}
+{Richard Rado}. 1964.
+\newblock \showarticletitle{Universal graphs and universal functions}.
+\newblock {\em Acta Arithmetica\/} {9}, 4 (1964), 331--340.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Thorup and Zwick}{Thorup and Zwick}{2001}]%
+        {Thorup01}
+{Mikkel Thorup} {and} {Uri Zwick}. 2001.
+\newblock \showarticletitle{Compact routing schemes}. In {\em Proceedings of
+  the thirteenth annual ACM symposium on Parallel algorithms and architectures}
+  {\em (SPAA '01)}. ACM, New York, NY, USA, 1--10.
+\newblock
+\showISBNx{1-58113-409-6}
+\showDOI{%
+\url{http://dx.doi.org/10.1145/378580.378581}}
+
+
+\bibitem[\protect\citeauthoryear{Wu, Lee, and Hsu}{Wu et~al\mbox{.}}{2004}]%
+        {wu2004prime}
+{Xiaodong Wu}, {Mong~Li Lee}, {and} {Wynne Hsu}. 2004.
+\newblock \showarticletitle{A prime number labeling scheme for dynamic ordered
+  XML trees}. In {\em Data Engineering, 2004. Proceedings. 20th International
+  Conference on}. IEEE, 66--78.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Xu, Ling, Wu, and Bao}{Xu
+  et~al\mbox{.}}{2009}]%
+        {xu2009dde}
+{Liang Xu}, {Tok~Wang Ling}, {Huayu Wu}, {and} {Zhifeng Bao}. 2009.
+\newblock \showarticletitle{DDE: from dewey to a fully dynamic XML labeling
+  scheme}. In {\em Proceedings of the 2009 ACM SIGMOD International Conference
+  on Management of data}. ACM, 719--730.
+\newblock
+
+
+\end{thebibliography}

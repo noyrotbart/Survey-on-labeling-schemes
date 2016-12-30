@@ -1,0 +1,23 @@
+ % !TEX root = ../Survey.tex
+
+  The proof follows directly from the following lemma.
+ \begin{lemma}
+The  following property holds for every $2 \leq m \leq p$ for some constant $c'$:
+ $$\sum_{i=m}^p 2^{t_i} \leq c' \sum_{i=m}^p \lceil l(i) \rceil_2 - 2^{t_m}.$$
+ \end{lemma}
+ \begin{proof}
+ We prove this claim by induction over $m$ from $p$ down to $2$. The claim holds trivially for $m=p$.
+ Assume that the property holds for $m$, for $m-1$ by the induction hypothesis:
+ $$\sum_{i=m-1}^p 2^{t_i} \leq c' \sum_{i=m}^p \lceil l(i) \rceil_2 - 2^{t_m} + 2^{t_{m-1}}.$$
+ If  $\lceil l(m-1) \rceil_2 \geq 2^{t_m}$ then $2^{t_{m-1}} = \lceil l(m-1) \rceil_2$ by definition, and thus for $c'>2$:
+  $$\sum_{i=m-1}^p 2^{t_i} \leq c' \sum_{i=m}^p \lceil l(i) \rceil_2 - 2^{t_m} + 2^{t_{m-1}} =  c' \sum_{i=m-1}^p \lceil l(i) \rceil_2 - 2^{t_m} - (c'-1) \lceil l(m-1) \rceil_2 \leq c' \sum_{i=m-1}^p \lceil l(i) \rceil_2  - 2^{t_{m-1}}.$$
+If $\lceil l(m-1) \rceil_2 < 2^{t_m}$ then  $2^{t_{m-1}} \leq 2{t_m}$ by definition.
+We want to prove that in this case 
+$$2^{t_{m-1}} \leq \frac{1}{2}2^{t_m}= 2^{t_m-1}$$
+Which holds so long as $t_i \geq 4$ for all $i$, which can be maintained as long as  $c'>16$.
+We can now replace the terms such that:
+$$\sum_{i=m-1}^p 2^{t_i} \leq c' \sum_{i=m}^p \lceil l(i) \rceil_2 - 2^{t_m} + 2^{t_{m-1}} =  c' \sum_{i=m-1}^p \lceil l(i) \rceil_2 - 2^{t_m}/2 \leq c' \sum_{i=m-1}^p \lceil l(i) \rceil_2  - 2^{t_{m-1}}.$$
+ \end{proof}
+ 
+ Choosing  $c=c'+1 \geq 5$ we   conclude:
+ $$\sum_{i=1}^p 2^{t_i} \leq c \sum_{i=m-1}^p  l(i)  - 2^{t_{m-1}}.$$

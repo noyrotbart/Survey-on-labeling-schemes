@@ -1,0 +1,174 @@
+\documentclass[prodmode,acmcsur]{acmsmall} 
+\usepackage{microtype}
+\usepackage{paralist}
+\usepackage{tikz}
+\usepackage{amsfonts}
+\usetikzlibrary{backgrounds}
+\usetikzlibrary{snakes}
+\usepackage{appendix}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usepackage{float}
+\usepackage{tabularx}
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\usepackage[scriptsize]{subfigure}
+\usepackage{booktabs}
+\usepackage{rotating}
+\usepackage{listings}
+\usepackage{rotating}
+\usepackage{paralist}
+\usepackage{setspace}
+\usepackage{booktabs}
+\usepackage{arydshln}
+\usepackage{breqn}
+\usepackage{mathtools}
+\usetikzlibrary{trees,matrix,fit,shapes,calc}
+\usepackage{array,multirow}
+\usepackage{tikz-qtree}
+\usepackage{epstopdf}
+\usepackage{xspace}
+\usepackage[colorinlistoftodos,prependcaption,textsize=tiny]{todonotes}
+
+\newenvironment{notproof}[1][\proofname]{\proof[#1]\mbox{}\\*}{\endproof}
+
+
+\newcommand{\tuple}[1]{\ensuremath{\left \langle #1 \right \rangle }}
+\newcommand{\la}{\ensuremath{ \mathcal{L}}}
+\newcommand\clearemptydoublepage{{\pagestyle{empty}\cleardoublepage}}
+%\newcommand\todo[1]{{\color{red}TODO: #1}}
+\newcommand\tocheck[1]{{\color{blue}#1}}
+\newcommand\m[1]{\mathcal{#1}}
+\newcommand{\fl}[1]{\lfloor #1 \rfloor}
+\newcommand{\ce}[1]{\lceil #1 \rceil}
+\newtheorem{property}[theorem]{Property}
+\newcommand{\ngr}[1]{{\color{red}#1}}
+\newcommand{\ceil}[1]{\ensuremath{\left\lceil{#1}\right\rceil}}
+\newcommand{\floor}[1]{\ensuremath{\left\lfloor{#1}\right\rfloor}}
+\newcommand{\LD}{\ensuremath{ \mathcal{LD}}}
+\newcommand{\cs}{\ensuremath{ \mathcal{CS}}}
+\newcommand{\nat}{\ensuremath{ \mathbb{N}}}
+\newcommand{\MC}{\ensuremath{ \mathcal{MC}}}
+\newcommand{\BC}{\ensuremath{ \mathcal{BC}}}
+\newcommand{\LS}{\ensuremath{ \mathcal{LS}}}
+\newcommand{\pre}{\operatorname{pre}}
+\newcommand{\dfs}{\operatorname{dfs}}
+\newcommand{\dfsi}{\operatorname{dfs_i}}
+\newcommand{\dfsd}{\operatorname{dfs_d}}
+\newcommand{\bin}{\operatorname{bin}}
+\newcommand{\emptystring}{\varepsilon}
+
+
+
+\newcommand{\lex}{<_{\text{lex}}}
+\newcommand{\s}[1]{\ensuremath{\mathtt{#1}}}
+\newcommand{\zero}{\s{0}}
+\newcommand{\one}{\s{1}}
+
+%functions
+\newcommand{\adjacency}{\emph{Adjacency}\xspace}
+\newcommand{\nonadjacency}{\emph{Non-Adjacency}\xspace}
+\newcommand{\siblings}{\emph{Siblings}\xspace}
+\newcommand{\ancestry}{\emph{Ancestry}\xspace}
+\newcommand{\nonancestry}{\emph{Non-Ancestry}\xspace}
+\newcommand{\NCAf}{\emph{Id-NCA}\xspace}
+\newcommand{\NCAl}{\emph{Label-NCA}\xspace}
+\newcommand{\NCA}{\emph{NCA}\xspace}
+\newcommand{\flow}{\emph{MaxFlow}\xspace}
+\newcommand{\centerf}{\emph{Center}\xspace}
+\newcommand{\routing}{\emph{Routing}\xspace}
+\newcommand{\distance}{\emph{Distance}\xspace}
+\newcommand{\seplevel}{\emph{SepLevel}\xspace}
+\newcommand{\connectivity}{\emph{Connectivity}\xspace}
+\newcommand{\smalldistance}{\emph{Small-Distance}\xspace}
+
+
+\newcommand{\ldepth}{\operatorname{ldepth}}
+\newcommand{\lpath}{\operatorname{lpath}}
+\newcommand{\parent}{\operatorname{parent}}
+\newcommand{\siblingsop}{\operatorname{siblings}}
+\newcommand{\children}{\operatorname{children}}
+\newcommand{\ancestors}{\operatorname{ancestors}}
+\newcommand{\descendants}{\operatorname{descendants}}
+\newcommand{\depth}{\operatorname{depth}}
+\newcommand{\rpath}{\operatorname{rpath}}
+\newcommand{\apex}{\operatorname{apex}}
+\newcommand{\llabel}{\operatorname{llabel}}
+\newcommand{\hlabel}{\operatorname{hlabel}}
+\newcommand{\flabel}{\operatorname{label}}
+\newcommand{\hpath}{\operatorname{hpath}}
+\newcommand{\hchild}{\operatorname{hchild}}
+\newcommand{\lchildren}{\operatorname{lchildren}}
+\newcommand{\lsiblings}{\operatorname{lsiblings}}
+\newcommand{\lsize}{\operatorname{lsize}}
+\newcommand{\size}{\operatorname{size}}
+\newcommand{\Id}{\operatorname{Id}}
+\newcommand{\Ap}{\operatorname{Ap}}
+\newcommand{\Range}{\operatorname{Range}}
+\newcommand{\app}{\operatorname{Approx}}
+\newcommand{\NCAfixed}{\operatorname{NCA-fixed}}
+
+\usepackage[noend]{algpseudocode}
+
+\begin{document}
+\title{A Survey on Labeling Schemes for Trees}
+\author{Stephen Alstrup, Esben Bistrup Halvorsen and Noy Rotbart}
+
+\begin{abstract}
+A labeling scheme is a method of labeling the nodes of a graph so that queries concerning nodes can be answered efficiently directly from their labels. 
+For the last 25 years, labeling schemes have been investigated, and they play an important role in the theory of distributed data structures.
+The two main characteristics of a labeling scheme are: the type of queries that can be answered from the labels; and the family of graphs which the labeling scheme can accept as input. 
+The primary indicator of quality of a labeling scheme is the size of the labels  it produces.
+We survey the literature on   lower and upper bounds for the worst-case sizes of labels produced by labeling schemes for trees.
+In addition, we present selected  techniques and results that achieve the best known lower and upper bounds as well as selected variants thereof.
+The survey presents the results systematically on a standard selection of families of trees. 
+\end{abstract}
+
+\keywords{Labeling schemes, Induced universal graphs}
+
+
+\begin{bottomstuff}
+\end{bottomstuff}
+
+\maketitle
+
+\section{Introduction}
+\input{./Chapters/Table_and_definitions}
+
+\section{Common Algorithmic Techniques}\label{section:techniques}
+\input{./Chapters/Techniques}
+% Bibliography
+
+
+\section{\ancestry}\label{section:Anc}
+\input{./Chapters/Ancestry}
+%\input{./Chapters/Distance}
+
+\section{Adjacency}\label{section:Adj}
+\input{./Chapters/Adjacency}
+
+\section{\NCA}\label{section:NCA}
+\input{./Chapters/NCA} 
+
+\section{\routing}\label{section:Routing}
+\input{./Chapters/Routing}
+%\input{./Chapters/Dynamic}
+%\input{./Chapters/Bounded}
+ 
+
+\bibliographystyle{ACM-Reference-Format-Journals}
+\bibliography{lit}
+\elecappendix
+
+\medskip
+\section{Basic Definitions}\label{AppendixA}
+\input{./Chapters/AppendixA}
+\section{Proof of the claim in  Lemma~\ref{Lemma-adj-loglogn}}\label{AppendixB}
+\input{./Chapters/appendixB}
+\newpage
+\section{Proof of the claim in  Section~\ref{traversaljumping}}\label{AppendixC}
+\input{./Chapters/appendixC}
+\end{document}
+

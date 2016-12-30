@@ -1,0 +1,76 @@
+% !TEX root = ../Survey.tex
+%If $u$ is a node on the path from the root of a rooted tree to a node $v$, then $u$ is an \emph{ancestor} of $v$, and $v$ is a \emph{descendant} of $u$. If, in addition, $\depth(v)=\depth(u)+1$ so that $uv$ is an edge, then $u$ is the unique \emph{parent} of $v$, denoted $\parent(v)$, and $v$ is a \emph{child} of $u$. Two nodes that have the same parent are \emph{siblings}. Note, in particular, that a node is its own ancestor, descendant and sibling, but not its own child or parent. A \emph{common ancestor} of two nodes is a node that is an ancestor of both nodes, and their \emph{nearest common ancestor} (NCA) is the unique common ancestor with maximum depth. Given a node $v$, the descendants of $v$ form an induced subtree $T_v$ with $v$ as root. 
+%
+%A \emph{binary tree} is a rooted tree in which all nodes have at most two children. A binary tree $T$ is \emph{full} if all internal nodes have exactly two children and is \emph{complete} if there are exactly $2^i$ nodes with depth $i$ for all $i<d$, where $d$ is the depth of the tree. A binary tree that is both full and complete and where all leaves are at the same depth is \emph{perfect}. A perfect binary tree will have $2^i$ nodes of depth $i$ for all $i\leq d$ and a total of $2^{d+1}-1$ nodes, whereof $2^d$ are leaves. A \emph{star} is a tree in which all nodes but one are leaves.
+%
+%
+%	\begin{definition}\label{dfn:tree-things-app}
+%	Let $T=(V,E)$ be a connected acyclic undirected graph, in other words, a \emph{tree}.
+%	 The number of edges in a tree is always $|E|=|V|-1$, and every two nodes are connected by a unique path.
+%	A tree may contain a speciallnodey designated node called the \emph{root}, in which case the tree is \emph{rooted}. The nodes of degree $1$ other than the root are called \emph{leaves}, and all other nodes are called \emph{internal} nodes. The distance from a node $v$ to the root is called the \emph{depth} of $v$, denoted $\depth(v)$. 
+%The depth of the tree, $\depth(T)$, is the maximum depth among the nodes in $T$. 
+%	The number of edges in a tree is always $|E|=|V|-1$, and every two nodes are connected by a unique path.
+%	
+%		The rooted \emph{forest}  $F =(V_F,E_F)$ is  a collection of  rooted trees.
+%
+%	\begin{enumerate}
+%		\item The vertices $v,u \in V$ are \emph{neighbours} if $(v,u) \in E$. The set of all neighbours of $v$ is labeled $N(v)$.
+%		\item A  node $v \in V$ has a \emph{degree} $k$ if it has $k$ neighbours, $deg(v)=k$.
+%		\item A  node $v \in V$ that has  a degree of at most 1 is called a  \emph{leaf}, and an \emph{inner node} is a non-leaf node.
+%		\item A \emph{path} of \emph{length} $k$ from a node $v$ to a node $u$ in a graph $G=(V,E)$  (denoted $v \leadsto u$) is a sequence  \tuple{v_0,v_1 \dots v_k} of vertices such that $v = v_0$, $u = v_k$, and $(v_{i-1},v_{i})\in E$ for $ i= 1,2 \dots k$.
+%		\item Let $v,u \in V_F$. The distance between $u$ and $v$ in $F$, denoted $dist_F (u, v)$, is the number of edges on the path  $u \leadsto v $. If $u$ and $v$ are not in the same tree in $F$, the function returns $\infty$.
+%		\item We denote for  each $v \in V$  $depth(v)= dist_T (v, r)$. 
+%		\item Let $v,u \in V$, we denote  the parent of $u$ by $p(u)$. A \emph{sibling} $(v \neq u$ of $u)$  is a child of   $p(u)$. 
+%		\item Let $v,u \in V$, we say that $u$ is a \emph{child} of $v$ if $u \in N(v)$ and $v$ is the root, and  $u \in N(v)-p(v)$ if $v$ is not the root. We label  all children of node $v$ as $Children(v)$.
+%		\item The \emph{size} of $v \in V$, $\vert v \vert $, is the number of nodes in $T_v$: that is, the number of descendants of $v$.
+%		\item The \emph{weighted diameter} of $T$,denoted $dist(T)$,  is defined as the maximum distance in $T$; that is $dist(T) =  \max_{x,y \in V}  dist_T (u, v)$
+%		\item We say that $T$ is \emph{$2^M$ edge weighted} if for each $e \in E$ we assign  an integer  $1 \leq w(e) \leq 2^M$.
+%
+%	\end{enumerate}
+%	\end{definition}
+
+\subsection{Sets and Operations}
+	\begin{definition}
+	Let $A$ and $B$ be languages. We define the regular operations \emph{union}, \emph{intersection}, and \emph{star}
+	as follows:
+	\begin{enumerate}
+		\item Union: $ A \cup B = \{ x \vert x \in A \text{ or } x \in B \} $.
+		 \item Intersection:  $ A \cap B = \{ x \vert x \in A \text{ and } x \in B \} $.
+		\item Star:  $ A^* = \{ x_1x_2\dots x_k \vert k \geq 0 \text{ and each } x_i \in A \} $.
+	\end{enumerate}
+	\end{definition}
+
+\subsection{Universal graphs}
+The definitions are from \citeN{Kannan92}.
+		\begin{definition} \label{dfn:node-induced}
+			A node induced subgraph or simply an induced subgraph $G'$ of $G$ is a node set $V' \subseteq V$ together with the edge set $E' = E \cap (V' \times V')$.
+		\end{definition}
+		\begin{definition} \label{dfn:universal}
+			Given finite set of graphs $\mathcal{G}$, a graph $G$ is node induced universal for  $\mathcal{G}$ if every graph in $\mathcal{G}$ is a node induced subgraph of $G$.
+			We say that a family $\mathcal{F}$ has universal graphs of size $g(n)$ if for every $n$ there is a graph of size less than or equal to $g(n)$ which is node induced universal for 	the set of all graphs in $\mathcal{F}$
+			with $n$ or fewer vertices.
+		\end{definition}
+			
+\subsection{Probability}
+\begin{definition}\label{dfn:prob}
+	The definitions  are cited from \citeN{Cormen01}.
+	
+	 A sample space $S$ is a set of \emph{elementary events}.
+	An \emph{event} is a subset of the sample space $S$.
+	Events $A$ and $B$ are mutually exclusive if $ A \cap B = \emptyset $
+	A \emph{Probability distribution} $prob()$ on a sample space $S$ is a mapping from events of $S$ to real numbers satisfying the following \emph{probability axioms}:
+	\begin{enumerate}
+		\item $prob(A) \geq 0$ for any event $A$.
+		\item $prob(S) = 1$
+		\item $prob(A \cup B) =prob(A)+ prob(B)  $ for any two mutually exclusive events $A$ and $B$.
+	\end{enumerate}
+	
+	A random variable is a function from $S$ into the real numbers.
+	
+	For a random variable $X$ and a real number $x$, we define the event  $X = x$ to be $\{ s \in S : X(s) = x \}$; thus,
+	$$ prob(X=x)  = \sum_{s \in S:X(s)=x} prob(s)$$
+	
+	The expected value (or, synonymously, expectation or mean) of a discrete random variable $X$ is:
+	$$EX=\sum_{x} x \cdot prob(X=x)$$
+	
+	\end{definition}

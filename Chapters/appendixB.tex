@@ -1,0 +1,51 @@
+% !TEX root = ../Survey.tex
+Consider the non-leaf  node $v$ with parent $p(v)$ and heavy child $h(v)$ in a rooted tree $T$.
+ Recall that the encoder of $\tuple{e_\alpha,d_\alpha}$ labels $v$ as a concatenation of  the bit strings:
+\begin{inparaenum}[\itshape I.\upshape)]
+  \item{$\dfsi(v)$};
+ \item $\ldepth(v)$;
+ \item a $1/2$-approximation of $\dfsi(v)-\dfsi(p(v))$; and
+ % denoted $\lfloor o \rfloor_2(v)$
+\item~a $1/2$-approximation of $\dfsi(h(v))-\dfsi(v)$.
+  %denoted $\lfloor ls \rfloor_2(v)$.
+ \end{inparaenum}
+ 
+
+\newcommand{\recomp}{\operatorname{recomp}}
+\newcommand{\pprox}{\lfloor P \rfloor _2}
+\newcommand{\cprox}{\lfloor C \rfloor _2}
+
+
+ We denote the $1/2$-approximation of $\dfsi(v)-\dfsi(p(v))$  as $\pprox(v)$  and  and  the $1/2$-approximation of $\dfsi(h(v))-\dfsi(v)$ as $\cprox(v)$.
+ The decoder receives both labels $\la(u)$ and $\la(v)$ and  computes the value  $\recomp(u,v)$ which takes a $1/2$ approximation of the values 
+ $\dfsi(u)-\dfsi(v)$ given by their labels.
+ 
+ 
+
+Suppose  $u$ is  the  parent of the node   $v$.
+The decoder  $d_\alpha$ returns true for  $\la(u),\la(v)$ by verifying  the following predicates hold:
+\begin{itemize}
+\item $\dfsi(u)< \dfsi(v)$.
+\item $\ldepth(v) = \ldepth(u)$ if $v$ is heavy, and $\ldepth(v) = \ldepth(u)+1$ if $v$ is light.
+\item  $ \cprox(u) = \pprox(v)  $ if $v$ is heavy and $ \cprox(u) \geq \pprox(v)  $ if $v$ is light.
+\item   $\recomp(u,v) =  \pprox(v)$.
+\end{itemize}
+
+ The above conditions are clearly sufficient if $u$ is the parent of $v$.
+ We now denote the heavy child of $u$ as $h(u)$.
+Assume in contradiction that the conditions hold, but $u$ is not the parent of  the node $v$. 
+First, assume that $v$ is light. 
+The first  two predicates assure that $u$ can not be a descendant of $v$. 
+Since $v$ has $\ldepth(u)+1$ it must be the child of either of $h(u)$ or not a decedent of $v$ at all.
+In both cases the path $u \leadsto v$ must contain at least one more node $y= p(v)$ where $\dfsi(y) \geq \dfsi(h(u))$.
+It follows that : 
+\begin{equation}\label{eq:yep}
+\dfsi(v)-\dfsi(u) \geq  \dfsi(v)- \dfsi(y) + \dfsi(h(u))- \dfsi(u) \geq 2 min(\cprox(u),\pprox(v)).
+\end{equation}
+Since $v$ is light we know that:
+$$\cprox(u) \geq \pprox(v) = \recomp(u,v).$$
+It follows that  $\recomp(u,v) = min(\cprox(u),\pprox(v))$, and since $\recomp$ is a $1/2$-approximation:
+ $$2 \recomp(u,v) =  2 min(\cprox(u),\pprox(v)) > \dfsi(v)-\dfsi(u),$$
+ which is a contradiction.
+ 
+ If $v$ is heavy, it may no longer be a decedent of $u$, and there exist a $y = p(v)$ for which equation~\ref{eq:yep} holds as before, and the contradiction holds similarly.  

@@ -1,0 +1,158 @@
+This is BibTeX, Version 0.99d (TeX Live 2014)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: Survey.aux
+The style file: ACM-Reference-Format-Journals.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Database file #1: lit.bib
+Repeated entry---line 442 of file lit.bib
+ : @article{abraham2010hub
+ :                        ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 448 of file lit.bib
+ : @incollection{abraham2012hierarchical
+ :                                      ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1111 of file lit.bib
+ : @article{adjiashvili2014labeling
+ :                                 ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1260 of file lit.bib
+ : @incollection{dahlgaard2014dynamic
+ :                                   ,
+I'm skipping whatever remains of this entry
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Warning--require articleno with numpages field in Alstrup06
+Warning--require articleno with numpages field in Kaplan01
+Warning--no journal in abraham2010hub
+Warning--no number and no volume in abraham2010hub
+Warning--page numbers missing in both pages and numpages fields in abraham2010hub
+Warning--empty address in abraham2012hierarchical
+Warning--empty publisher in abraham2006routing
+Warning--empty address in abraham2006routing
+Warning--empty publisher in abraham2004compact
+Warning--empty address in abraham2004compact
+Warning--empty publisher in abraham2005name
+Warning--empty address in abraham2005name
+Warning--empty address in adjiashvili2014labeling
+Warning--require articleno with numpages field in aho
+Warning--require articleno with numpages field in Alstrup05
+Warning--empty publisher in Green14
+Warning--empty address in Green14
+Warning--page numbers missing in both pages and numpages fields in Green14
+Warning--empty publisher in alstrup2015optimal
+Warning--empty address in alstrup2015optimal
+Warning--empty address in Alstrup02NCA
+Warning--no number and no volume in alstrup1997finding
+Warning--require articleno with numpages field in Alstrup02
+Warning--empty address in blin2010fast
+Warning--require articleno with numpages field in Gavoille06
+Warning--empty publisher in caminiti2009informative
+Warning--empty address in caminiti2009informative
+Warning--empty address in chung1989separator
+Warning--require articleno with numpages field in Cohen02
+Warning--empty address in Cormen01
+Warning--empty publisher in courcelle2007forbidden
+Warning--empty address in courcelle2007forbidden
+Warning--page numbers missing in both pages and numpages fields in courcelle2007forbidden
+Warning--empty address in cover2012elements
+Warning--no number and no volume in dahlgaard2014dynamic
+Warning--page numbers missing in both pages and numpages fields in dahlgaard2014dynamic
+Warning--no number and no volume in dahlgaard2014improved
+Warning--page numbers missing in both pages and numpages fields in dahlgaard2014improved
+Warning--empty address in Dom07
+Warning--empty publisher in Fischer09
+Warning--empty address in Fischer09
+Warning--empty address in Fraigniaud01
+Warning--empty address in fraigniaud2002space
+Warning--empty publisher in fraigniaud2009
+Warning--empty address in fraigniaud2009
+Warning--empty publisher in Fraigniaud10
+Warning--empty address in Fraigniaud10
+Warning--page numbers missing in both pages and numpages fields in Fraigniaud10
+Warning--require articleno with numpages field in Korman10
+Warning--no number and no volume in freedman2016optimal
+Warning--page numbers missing in both pages and numpages fields in freedman2016optimal
+Warning--require articleno with numpages field in gabow
+Warning--no number and no volume in gavoille07
+Warning--empty address in gavoille2007shorter
+Warning--require articleno with numpages field in Peleg03
+Warning--require articleno with numpages field in Gavoille2001
+Warning--empty publisher in gavoille96
+Warning--empty address in gavoille96
+Warning--empty publisher in ghaleb2013novel
+Warning--empty address in ghaleb2013novel
+Warning--empty publisher in Kannan92
+Warning--empty address in Kannan92
+Warning--empty publisher in kaplan2002comparison
+Warning--empty address in kaplan2002comparison
+Warning--empty publisher in korman2008improved
+Warning--empty address in korman2008improved
+Warning--require articleno with numpages field in Korman07K
+Warning--no number and no volume in korman2006dynamic
+Warning--empty address in korman2007compact
+Warning--require articleno with numpages field in Rodeh10
+Warning--empty publisher in krioukov2004compact
+Warning--empty address in krioukov2004compact
+Warning--page numbers missing in both pages and numpages fields in krioukov2004compact
+Warning--empty address in lewenstein2013succinct
+Warning--empty publisher in li2005qed
+Warning--empty address in li2005qed
+Warning--empty address in lu2013xml
+Warning--empty publisher in lu2005region
+Warning--empty address in lu2005region
+Warning--empty publisher in o2012scooter
+Warning--empty address in o2012scooter
+Warning--empty publisher in o2004ordpaths
+Warning--empty address in o2004ordpaths
+Warning--empty publisher in peleg1999proximity
+Warning--empty address in peleg1999proximity
+Warning--empty address in peleg2000informative
+Warning--require articleno with numpages field in Peleg05
+Warning--require articleno with numpages field in Thorup01
+Warning--empty publisher in wu2004prime
+Warning--empty address in wu2004prime
+Warning--empty publisher in xu2009dde
+Warning--empty address in xu2009dde
+You've used 82 entries,
+            5290 wiz_defined-function locations,
+            1759 strings with 28993 characters,
+and the built_in function-call counts, 87549 in all, are:
+= -- 11130
+> -- 3280
+< -- 2
++ -- 994
+- -- 1319
+* -- 5579
+:= -- 9597
+add.period$ -- 424
+call.type$ -- 82
+change.case$ -- 548
+chr.to.int$ -- 76
+cite$ -- 174
+duplicate$ -- 7285
+empty$ -- 5130
+format.name$ -- 1392
+if$ -- 21052
+int.to.chr$ -- 7
+int.to.str$ -- 0
+missing$ -- 311
+newline$ -- 715
+num.names$ -- 652
+pop$ -- 2776
+preamble$ -- 1
+purify$ -- 951
+quote$ -- 0
+skip$ -- 2126
+stack$ -- 0
+substring$ -- 7387
+swap$ -- 761
+text.length$ -- 386
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 1130
+warning$ -- 92
+while$ -- 682
+width$ -- 0
+write$ -- 1508
+(There were 4 error messages)

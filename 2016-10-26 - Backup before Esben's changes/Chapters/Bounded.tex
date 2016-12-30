@@ -1,0 +1,90 @@
+% !TEX root = ../Survey.tex
+\section{Bounded cases}\label{section:bounded-cases}
+We describe the new results mentioned in table ~\ref{Table2}.
+%\paragraph{Routing}
+\paragraph{Ancestry}
+	\begin{thm} \label{thm:cat-anc}
+		 $Caterpillars(n)$ have an ancestry  labeling scheme of $ \log n + \Theta(1)$
+	\end{thm}
+		\begin{proof}
+			 Note that in contrast to general case,  only internal vertices can be mutual ancestors.
+	 		Let $I_1 \dots I_k$ be the internal vertices of the rooted caterpillar $T = (V,E)$, for each  $1 \leq i \leq k$ we mark the $k_i$ leaves of $I_i$ as $L_i^1 \dots L_i^{k_i}$.
+			Let $r  \in V$ be the root of $T$. 
+			The encoder assigns  each node  a number in the range $[1 \dots n]$ using a BFS scan on $T$ from $r$.
+			The connected internal node is last in the scan and receives the number $k_1 +1$, and the labeling continues recursively.
+			We mark internal vertices by a prefix $0$ to the label, and $1$  for a leaf.
+			
+			For query $Ancestor(u,v)$, the decoder can safely reject if $u$ and $v$ are leaves.
+			Otherwise, the query would return true if and only if $u<v$.
+		 \end{proof}
+ \paragraph{Distance}
+	 \begin{thm} \label{thm:cat-dist}
+	 $Caterpillars(n)$ have a distance labeling scheme of $2 \log n$
+	 \end{thm}
+	 
+	 \begin{proof}
+	 Let $I_1 \dots I_k$ be the internal vertices of the caterpillar $T$, for each  $1 \leq i \leq k$ we mark the $k_i$ leaves of $I_i$ as $L_i^1 \dots L_i^{k_i}$.
+	 The encoder assigns $I_i$ the label $\tuple{i,0}$ and its leaves $L_i^1 \dots L_i^{k_i}$ the labels $\tuple{i,1} \dots \tuple{i,k}$ in according.
+	 Assume that $a \geq c$.
+	 The decoder acts on query $Distance(\tuple{a,b},\tuple{c,d})$ as follows:
+	 	\begin{enumerate}
+		\item $b=d=0$ : return $a-c$
+		\item $ b\neq 0 ,d \neq 0$ : return $a-c+2$ if $ a \neq c$ and $0$ otherwise.
+		\item $ b = 0 ,d \neq 0$ or  $ b  \neq 0,d = 0$  : return $a-c+1$
+	 	\end{enumerate}
+		Since $1 \leq i,k_i \leq n$ we conclude that the latter can be decoded using (exactly) $ 2 \log n$ bits.
+		Moreover, for $Caterpillars(n,\Delta)$, $k_i \leq \Delta$, and for $Caterpillars(n,\delta)$, $i \leq \Delta$.
+		Thus, for both cases  only $  \log n + \log \Delta $  are required.
+ 	 \end{proof}
+	 
+	 If $T$ is an edge  weighted with maximum edge weight $2^M$ we assign  for $I_i$ with weight $w(I_i)$ the label $\tuple{\sum_{j=1}^{i} w(I_j) ,0,0}$ 
+	 
+	 The leaves $L_i^1 \dots L_i^{k_i}$ are assigned the labels
+	 
+	  $\tuple{\sum_{j=1}^{i} w(I_j) , w(L_i^1)  ,1} \dots \tuple{\sum_{j=1}^{i} w(I_j) , w(L_i^{k+1})  ,k+1} $ in according.
+	  
+	   Assume that $a \geq d$.
+	 The decoder now  acts on query $Distance(\tuple{a,b,c},\tuple{d,e,f})$ as follows:
+	 	\begin{enumerate}
+		\item $c=f=0$ : return $a-d$
+		\item $ c\neq 0 ,f \neq 0$ : if $\tuple{a,b,c} \neq \tuple{d,e,f}$  return $a-d+b+e$, otherwise  $0$.
+		\item $ c = 0 ,f  \neq 0$ : return $a-d+e$
+		\item $ c \neq  0 ,f  = 0$ : return $a-d+b$
+	 	\end{enumerate}
+		
+		
+	 \begin{corollary}\label{Cor:lowerbounds}
+	 \hfill
+	 \begin{itemize}
+	 	\item Edge weighted $Caterpillars(n,2^M)$  have a distance labeling scheme of $2 \log n + 2M$
+		\item  Edge weighted  $Caterpillars(n,\Delta,2^M)$   have a distance labeling scheme of $ \log n  + \log \Delta + 2M$
+	\end{itemize}
+	 \end{corollary}
+%
+%\paragraph{Center}
+%
+%	 \begin{thm} \label{thm:cat-dist}
+%	 $Caterpillars(n)$ have a center  labeling scheme of $2 \log n$
+%	 \end{thm}
+%	 
+%	 \begin{proof}
+%	 
+%	 \end{proof}
+
+\paragraph{The implications of Alstrup's lower bounds on the limited variants}
+The limits attained by Alstrup \cite{Alstrup05} applies directly for ancestry in the bounded depth and degree cases. The sibling bound applies  for caterpillars,  and bounded  depth trees.
+As seen in Figure~\ref{fig:loubou}, the lower bound for siblings is defined for $\delta =3$. Moreover, each tree of the $\log n$ trees in the family can be transformed  to a caterpillar in the following manner.
+Denote the set of nodes neighboring to the root by $v_1 \dots v_i$.  We remove the root $r$ and for each  $1 \leq  j < i$  we replace each edge $(r,v_j)$ with $(v_j,v_{j+1})$ .
+The transformed  family of caterpillars  maintains  the  lower bound for sibling relation.
+
+We can thus conclude:
+
+	\begin{corollary}
+	\hfill
+	 	\begin{itemize}
+		\item  Any sibling labeling scheme for $Caterpillars(n)$  must have a labeling scheme of at least  $ \log n +O(\log \log n)$ bits.
+		\item	Any sibling labeling scheme for $Caterpillars(n,\delta)$ ($\delta \geq 2$)  must have a labeling scheme of  at least $ \log n +O(\log \log n)$ bits.
+		\end{itemize}
+	\end{corollary}
+
+\input{./Figures/tikz}

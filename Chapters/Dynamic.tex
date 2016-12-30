@@ -1,0 +1,71 @@
+% !TEX root = ../Survey.tex
+\section{Labeling Schemes for Dynamic Tree Networks }\label{section:dynamic}
+The labeling schemes described so far assume the existence of a tree of $n$ nodes. In real life applications, such tree is not known in advance. When the topology of the tree and its size undergo repeated changes a different method is required.
+We describe  general dynamic labeling schemes. By that we mean  a method to extend an existing \emph{static} labeling scheme for the dynamic setting.
+		
+		
+We adopt the terminology in~\cite{korman2004labeling}, which names dynamic encoding algorithms as \emph{distributed online protocols} or simply \emph{protocols}.
+The following types of topology changes are considered:
+	\begin{inparaenum}[\itshape a\upshape)]
+			\item \emph{Add-Leaf}, where a new degree-one node $u$ is added as a child of an existing node $v$
+			; and \item \emph{Remove-Leaf}, where a  (non-root) leaf $v$ is deleted.
+	\end{inparaenum}
+Dynamic labeling schemes that support only \emph{Add-Leaf} are denoted  \emph{semi-dynamic}, and those that support both operations are denoted  \emph{fully-dynamic}.
+
+\textbf{Metrics  for dynamic labeling schemes.} In the literature surveyed, labeling schemes aim for smallest label possible.
+If communication is not accounted for, dynamic labeling schemes can trivially achieve the optimal, static bounds.
+Therefore, in order to account for the cost of communication, the following  metrics are introduced~\cite{korman2004labeling}.
+Let $M$ be a dynamic labeling scheme, with re-labeling allowed, and let $S(n)$ be a sequence of $n$ topological changes.
+\begin{enumerate}
+	\item \emph{Message Complexity}, $\MC(M, n)$: the maximum number of messages sent in total by $M$ on $S(n)$. Messages are sent  exclusively between adjacent  nodes.
+	\item \emph{Bit Complexity}, $\BC(M, n)$: the maximum number of bits sent in total by $M$ on $S(n)$.
+	\item \emph{Label Size} $\LS(M,n)$:  the maximum size of a label assigned by $M$ on $S(n)$.
+\end{enumerate}
+
+\begin {table}
+	\begin{center}
+	    \begin{tabular}{ | l | l | l | l |}
+		    \hline
+		    Labeling Scheme & Label Size & $\MC$ & $\BC$ \\ \hline
+		    \emph{Distance} 	&$O(\log^2 n)$ & $O(n)$ & $O(n \log^2 n)$ \\ \hline
+		   SemDL	&$O(\log^2 n)$ & $O(n \log^2 n)$ & $O(n \log^2 n \log \log n)$  \\ \hline
+		    DL 		&$O(\log^2 n)$ & $O(n \log^2 n$) & $O(n \log^2 n \log \log n)$ \\ \hline
+		   SemGL	&$O(\frac{d-1}{\log d}\log^3 n)$ & $O(n \frac{\log n}{\log d})$ & unreported   \\ \hline
+		    GL		& $O(\log^3 n)$ & $O(n \log^2 n)$ & unreported \\
+		    \hline
+	    \end{tabular}
+	 \end{center}
+	 	\caption{Simplified complexity estimates for $Trees(n)$. Bounds for $GL$  are reported with $d=2$. See~\cite{korman2004labeling} for an elaborate complexity report.}
+	\label{table:complexities}
+\end{table}
+				
+Korman et al.~\cite{korman2004labeling} presented \emph{semi-dynamic} and  \emph{fully-dynamic}  labeling schemes that support distance queries and  a \emph{semi-dynamic} and \emph{fully-dynamic}  labeling scheme that, under conditions, receives a static labeling scheme as input and supports queries of its type. To the best of our knowledge, none of the static labeling schemes in the literature fail to obey the conditions.
+
+ We denote the static distance labeling scheme as  \emph{Distance}, its extension to a specialized  semi-dynamic mode  \emph{SemDL}, and its fully-dynamic  specialized extension as \emph{DL}. 
+Korman et al.~\cite{korman2004labeling} define the general dynamic labeling schemes \emph{SemGL} and \emph{GL}, which maintain labels on each node of a dynamically changing tree network using a static labeling scheme as a subroutine. The performance of these schemes is tightly coupled to the performance of the static scheme used.
+ Throughout the remainder, we denote the general labeling schemes operating on \emph{Distance} simply as \emph{SemGL} and \emph{GL}, and explicitly mention other distance functions where appropriate.  
+ Table~\ref{table:complexities}  reports the  different  complexities  for the aforementioned schemes (the parameter $d$ is explained later).
+
+
+
+\textbf{SemDL.}
+The protocol extends the distance labeling scheme explained in Theorem~\ref{thm:nca-designer-long}, based on the heavy-light decomposition.
+ It is not essential for the correctness of the decomposition that the heavy node selected be in fact the heaviest, or say, the 3rd largest. It is only essential for the bound on the label size.
+SemDL maintains a dynamic version of the sketched labels using this exact observation. Every node maintains an estimate of its weight, and transfers this estimate to its parent, using a previously introduced binning method~\cite{afek1996local}.
+When the estimate exceeds a threshold in a node, this implies that a node other than the heavy node is now significantly heavier than the heavy node. Thus, a  re-labeling (shuffle, in~\cite{korman2004labeling}) is instantiated on the subtree to maintain the $O(\log^2 n)$ label size.
+%There are two types of messages passed across the tree network: labeling, and bin messages.
+
+\textbf{SemGL.} The protocol is designed to transform any static labeling scheme $Static$ to semi-dynamic, and therefore, does not utilize the heavy-light decomposition directly.
+Instead, the protocol operates $Static$  separately on a cleverly constructed sets of bubbles described hereafter.
+
+Each node $v \in T$ is included in exactly one induced subtree of $T$, denoted  \emph{bubble} of \emph{order} $i$ ($0 \leq i \leq \log_d n$) that  contains at least   $d^i$  nodes. 
+The bubbles constitute a  \emph{bubble tree}, where the order of  a bubble is always less or equal to the order of the parent bubble. 
+ In addition, there are no $d$ consecutive bubbles of the same order in any path of the bubble tree. 
+A node added to the tree is assigned the order $0$. If this insertion yields $d$ consecutive bubbles of order $0$ in the bubble tree, they are merged to a single  bubble of order $1$, and the condition is checked again for bubbles of order $1$ and so on. We denote the parent of the root of  bubble $b$ as $b_p$ and the function that $Static$ supports as $f$.
+ Essentially, the label of a node $v$ in a bubble $b$ is a concatenation of the label of $b_p$ with both   a local $Static$ label of $v$ in $b$, and the result of $f(v,b_p)$.  
+ 
+\textbf{Semi-dynamic to fully-dynamic conversion.} Both labeling schemes are converted to their counterpart fully-dynamic labeling schemes, DL and GL, using an additional simple protocol.
+The protocol uses the binning method~\cite{afek1996local} to maintain local weight estimates for each node.
+The protocol simply ignores the topological changes up to the point in which their number is large, and then re-labels the entire tree.
+
+

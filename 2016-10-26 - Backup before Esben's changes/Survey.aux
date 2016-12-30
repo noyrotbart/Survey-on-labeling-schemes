@@ -1,0 +1,414 @@
+\relax 
+\citation{Breuer67}
+\citation{Kannan92}
+\citation{Muller1988}
+\citation{Peleg03}
+\citation{rado1964universal}
+\citation{gavoille2007shorter}
+\citation{adjiashvili2014labeling}
+\citation{Alstrup02}
+\citation{Thorup01}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}}
+\@writefile{tdo}{\contentsline {todo}{\color@box {}{orange}{\leavevmode {\color  {orange}o}}\ I don't think ``adjacency'' should be written like this all over the place (but it's fine to have it slanted here).}{1}}
+\pgfsyspdfmark {pgfid1}{28094197}{26468086}
+\pgfsyspdfmark {pgfid4}{34867771}{26476610}
+\pgfsyspdfmark {pgfid5}{36035458}{26240026}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.1}An example}{2}}
+\newlabel{sec:example}{{1.1}{2}}
+\newlabel{fig:simple}{{1}{2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.2}Outline}{2}}
+\citation{alstrup2015optimal}
+\citation{Gavoille06}
+\citation{Fraigniaud10}
+\citation{adjiashvili2014labeling}
+\citation{fraigniaud2009}
+\citation{dahlgaard2014improved}
+\citation{Fraigniaud10}
+\citation{fraigniaud2009}
+\citation{fraigniaud2009}
+\citation{Peleg05}
+\citation{Alstrup05}
+\citation{Alstrup05}
+\citation{freedman2016optimal}
+\citation{Gavoille2001}
+\citation{Katz00}
+\citation{Katz00}
+\citation{katz2004labeling}
+\citation{Green14}
+\citation{Peleg05}
+\citation{Thorup01}
+\citation{Fraigniaud01}
+\citation{lewenstein2013succinct}
+\citation{Alstrup05}
+\citation{freedman2016optimal}
+\citation{Gavoille06}
+\citation{Alstrup05}
+\citation{Alstrup02NCA}
+\citation{Gavoille06}
+\citation{Gavoille2001}
+\citation{Alstrup02NCA}
+\citation{Gavoille2001}
+\citation{Gavoille2001}
+\citation{Alstrup02NCA}
+\citation{Alstrup05}
+\citation{Gavoille2001}
+\citation{Alstrup02NCA}
+\citation{Alstrup05}
+\newlabel{section:Limited}{{1.2}{3}}
+\newlabel{table:main}{{I}{4}}
+\newlabel{fig:complexityruler}{{2}{5}}
+\@writefile{toc}{\contentsline {paragraph}{Bounded trees}{5}}
+\newlabel{table:bounded}{{II}{5}}
+\citation{Kaplan01}
+\citation{Cohen02,lu2013xml,harder2007node,Kaplan01,wu2004prime,cohen10journal}
+\citation{Kannan92}
+\citation{Kannan92}
+\citation{rado1964universal}
+\citation{Rodeh10}
+\citation{Paul01}
+\citation{Gavoille2001}
+\citation{abraham2010hub,abraham2012hierarchical}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.3}Practical and theoretical applications of labeling schemes}{6}}
+\newlabel{section:applications}{{1.3}{6}}
+\@writefile{toc}{\contentsline {paragraph}{XML querying}{6}}
+\@writefile{toc}{\contentsline {paragraph}{Graph theory}{6}}
+\@writefile{toc}{\contentsline {paragraph}{Shortest paths in road networks}{6}}
+\citation{Peleg05}
+\citation{Peleg03,Thorup01,Fraigniaud01,gavoille96,Dom07,Korman07K,krioukov2004compact,abraham2006routing,abraham2005name}
+\@writefile{toc}{\contentsline {paragraph}{Routing schemes}{7}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.4}Preliminaries}{7}}
+\newlabel{section:preliminaries}{{1.4}{7}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {1.4.1}Graph families related definitions}{7}}
+\newlabel{definitions-of-trees}{{1.4.2}{7}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {1.4.2}Basic tree related definitions}{7}}
+\citation{Kano07}
+\citation{courcelle2007forbidden}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {1.4.3}Labeling schemes and variations}{8}}
+\newlabel{dfn:labeling_schemes}{{1.1}{8}}
+\newlabel{remark:unique}{{1.2}{8}}
+\newlabel{dfn:approx-label}{{1.4}{8}}
+\citation{fraigniaud2009}
+\citation{Kaplan01,Kannan92}
+\citation{Alstrup02,Korman07K,gavoille07,Alstrup05}
+\citation{Esben13}
+\newlabel{dfn:forbidden}{{1.5}{9}}
+\newlabel{dfn:one-sided}{{1.6}{9}}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Common Algorithmic Techniques}{9}}
+\newlabel{section:techniques}{{2}{9}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Binary strings and bit tricks}{9}}
+\newlabel{section:Misc-Tools}{{2.1}{9}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.1.1}Number representation}{9}}
+\newlabel{tec:padding}{{2.1.2}{10}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.1.2}Padding}{10}}
+\newlabel{tec:approx}{{2.1.3}{10}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.1.3}Approximation using $O(\qopname  \relax o{log}\qopname  \relax o{log}n)$ bits}{10}}
+\newlabel{tec:wordinside}{{2.1.4}{10}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.1.4}Word storing in a string}{10}}
+\newlabel{lemma:numberinside}{{2.1}{10}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Efficient encodings}{10}}
+\newlabel{sec:efficient-encoding}{{2.2}{10}}
+\newlabel{tec:dfs}{{2.2.1}{10}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.1} A $\operatorname  {dfs_i}$ traversal}{10}}
+\newlabel{tec:suffix}{{2.2.2}{10}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.2}Suffix-free codes}{10}}
+\citation{cover2012elements}
+\citation{hareltarjan}
+\newlabel{tec:alphabetic}{{2.2.3}{11}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.3}Alphabetic sequences}{11}}
+\newlabel{lemma:Gilbert}{{2.2}{11}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Tree decompositions}{11}}
+\newlabel{section:Tree-decompositions}{{2.3}{11}}
+\newlabel{tec:heavylight}{{2.3.1}{11}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.3.1}Heavy-light decomposition}{11}}
+\citation{chung1989separator}
+\citation{jordan1869assemblages}
+\citation{korman2007compact}
+\newlabel{fig:heavylighttree}{{3}{12}}
+\newlabel{tec:separator}{{2.3.2}{12}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.3.2}Separator}{12}}
+\newlabel{thm:separatorexits}{{2.3}{12}}
+\citation{Thorup01}
+\citation{Korman10}
+\newlabel{fig:separator}{{4}{13}}
+\newlabel{tec:Splines}{{2.3.3}{13}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.3.3}Spines decomposition}{13}}
+\newlabel{tec:clustering}{{2.3.4}{13}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.3.4}Clustering}{13}}
+\citation{alstrup1997finding}
+\citation{Alstrup05}
+\citation{dahlgaard2014dynamic}
+\newlabel{fig:ladder}{{5}{14}}
+\newlabel{dfn:cluster}{{2.4}{14}}
+\newlabel{fig:niceClusterDemo}{{6}{14}}
+\newlabel{dfn:nice-cluster-partition}{{2.5}{14}}
+\newlabel{lemma:decomposition}{{2.6}{14}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4}Boxes and groups}{14}}
+\newlabel{section:boxes-and-groups}{{2.4}{14}}
+\citation{Kannan92}
+\newlabel{lemma:boxgroups}{{2.7}{15}}
+\newlabel{item:boxgroup1}{{i}{15}}
+\newlabel{item:boxgroup2}{{ii}{15}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}\emph  {Ancestry}\xspace  }{15}}
+\newlabel{section:Anc}{{3}{15}}
+\newlabel{section:NaiveAncestry}{{3}{15}}
+\@writefile{toc}{\contentsline {paragraph}{Na\"ive algorithm}{15}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Literature review}{15}}
+\newlabel{sec:anc-lit}{{3.1}{15}}
+\citation{Kaplan01}
+\citation{Alstrup06}
+\citation{Alstrup05}
+\citation{Fraigniaud10}
+\citation{Korman10}
+\citation{knudsen2014private}
+\citation{Kannan92}
+\citation{Alstrup05}
+\citation{kaplan2002comparison,wu2004prime,o2004ordpaths,li2005qed,lu2005region,harder2007node,harder2007node,xu2009dde,cohen2010labeling,o2012scooter,ghaleb2013novel}
+\citation{cohen2010labeling}
+\newlabel{fig:simple-ancestry}{{7}{16}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Upper bound}{16}}
+\newlabel{subsetion:mat-optimal}{{3.2}{16}}
+\newlabel{line:critical}{{6}{17}}
+\newlabel{Lemma:newwriting}{{3.2}{17}}
+\citation{Alstrup05}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Lower bound}{18}}
+\newlabel{sub-anc-lower}{{3.3}{18}}
+\newlabel{theo:ancestrytreeslower}{{3.3}{18}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Dynamic \emph  {Ancestry}\xspace  labeling schemes}{18}}
+\newlabel{sub-anc-dynamic}{{3.4}{18}}
+\citation{Cohen02}
+\citation{Kaplan01}
+\newlabel{fig:TheosDrawing}{{8}{19}}
+\@writefile{toc}{\contentsline {paragraph}{Lower bound for persistent \emph  {Ancestry}\xspace  labeling scheme}{19}}
+\newlabel{dfn:kaplans-trees}{{3.4}{19}}
+\newlabel{lemma:persistent}{{3.5}{19}}
+\citation{Cohen02}
+\citation{dahlgaard2014dynamic}
+\citation{Breuer67}
+\citation{Kannan92}
+\citation{Muller1988}
+\citation{Kaplan01}
+\citation{Alstrup02}
+\citation{Fraigniaud10}
+\citation{Gavoille06}
+\citation{adjiashvili2014labeling}
+\citation{fraigniaud2009}
+\newlabel{fig:KaplansTrees}{{9}{20}}
+\newlabel{cor:persistent}{{3.6}{20}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Adjacency}{20}}
+\newlabel{section:Adj}{{4}{20}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Literature overview}{20}}
+\citation{nash1961edge}
+\citation{chen1994short}
+\citation{Kannan92}
+\citation{Alstrup02}
+\citation{Kannan92}
+\citation{Alstrup02}
+\citation{Alstrup02}
+\citation{Alstrup02}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Upper bound for $Trees(n)$ }{21}}
+\newlabel{sec-adj-lb}{{4.2}{21}}
+\newlabel{sec-adj-simple}{{4.2.1}{21}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.1}An \emph  {Adjacency}\xspace  labeling scheme of $\qopname  \relax o{log}n +O(\qopname  \relax o{log}\qopname  \relax o{log}n$) bits}{21}}
+\newlabel{lem:4loglogn}{{4.1}{21}}
+\newlabel{Lemma-adj-loglogn}{{4.1}{21}}
+\newlabel{sec:log-star}{{4.2.2}{21}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.2}A $\qopname  \relax o{log}n + O(\qopname  \relax o{log}^*n)$ labeling scheme}{21}}
+\citation{Alstrup02}
+\citation{Alstrup02}
+\newlabel{fig:bitTricks}{{10}{22}}
+\newlabel{lemma:nice_decomp}{{4.3}{22}}
+\newlabel{dfn:macro-tree}{{4.4}{22}}
+\newlabel{theo:adjacencytreesupper}{{4.5}{22}}
+\newlabel{fig:crazyeleven}{{11}{23}}
+\newlabel{fig:Clustering}{{12}{23}}
+\citation{Gavoille06}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Traversal and jumping}{24}}
+\newlabel{traversaljumping}{{4.3}{24}}
+\citation{adjiashvili2014labeling}
+\citation{BCLR}
+\citation{adjiashvili2014labeling}
+\citation{BCLR}
+\citation{fraigniaud2009}
+\newlabel{fig:caterpillar}{{13}{25}}
+\@writefile{toc}{\contentsline {paragraph}{Optimal bounded degree}{25}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}One-sided error \emph  {Adjacency}\xspace  labeling scheme}{25}}
+\newlabel{sec-adj-onesided}{{4.4}{25}}
+\citation{fraigniaud2009}
+\citation{aho}
+\citation{hareltarjan}
+\citation{Alstrup02NCA}
+\citation{Green14}
+\citation{peleg2000informative}
+\@writefile{toc}{\contentsline {section}{\numberline {5}\emph  {NCA}\xspace  }{26}}
+\newlabel{section:NCA}{{5}{26}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Literature review}{26}}
+\newlabel{sec:Lit-NCA}{{5.1}{26}}
+\citation{blin2010fast}
+\citation{caminiti2009informative,Fischer09}
+\citation{Korman07K}
+\citation{gabow}
+\citation{Peleg05}
+\citation{Peleg05}
+\@writefile{toc}{\contentsline {paragraph}{Connection to other problems}{27}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}\emph  {Id-NCA}\xspace  }{27}}
+\newlabel{sec-NCA-FIXED}{{5.2}{27}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.1}\emph  {NCA}\xspace  , \emph  {SepLevel}\xspace  , and their connection to \emph  {Distance}\xspace  }{27}}
+\newlabel{NCAconnection}{{5.1}{27}}
+\citation{gavoillea2004distance}
+\citation{gavoillea2004distance}
+\citation{Peleg05}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.2}Upper bound for \emph  {Id-NCA}\xspace  }{28}}
+\newlabel{NCA-fixed-upper}{{5.3}{28}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}\emph  {Label-NCA}\xspace  }{28}}
+\newlabel{section-NCA-designer}{{5.3}{28}}
+\citation{Peleg00}
+\citation{Alstrup02NCA}
+\citation{Alstrup02NCA}
+\newlabel{fig:NCAPeleg}{{14}{29}}
+\newlabel{thm:nca-designer-long}{{5.4}{29}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.1}\emph  {Label-NCA}\xspace  with $O(\qopname  \relax o{log}n)$ bits}{29}}
+\citation{Esben13}
+\citation{Green14}
+\citation{Korman07K}
+\newlabel{thm:nca-short}{{5.5}{30}}
+\newlabel{fig:NCAESBEN}{{15}{30}}
+\citation{Thorup01}
+\citation{Thorup01}
+\citation{Fraigniaud01}
+\citation{peleg1999proximity}
+\citation{Fraigniaud01}
+\citation{Thorup01}
+\citation{fraigniaud2002space}
+\citation{krioukov2007compact}
+\citation{korman2006dynamic,korman2008improved}
+\@writefile{toc}{\contentsline {paragraph}{Labeling schemes with a query}{31}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}\emph  {Routing}\xspace  }{31}}
+\newlabel{section:Routing}{{6}{31}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}Introduction to routing schemes}{31}}
+\newlabel{section:routing-intro}{{6.1}{31}}
+\newlabel{dfn:port}{{6.1}{31}}
+\citation{gavoille2001space}
+\citation{abraham2004compact}
+\citation{gavoille2001routing}
+\citation{Dom07}
+\citation{Thorup01}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}Literature review}{32}}
+\newlabel{routing:literature}{{6.2}{32}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3}Designer port model}{32}}
+\newlabel{sec:ThorupZwick}{{6.3}{32}}
+\newlabel{thm:routing-upper}{{6.2}{32}}
+\@writefile{toc}{\contentsline {paragraph}{Label description}{32}}
+\newlabel{fig:routing-crazy}{{16}{33}}
+\newlabel{lemma:tikun}{{6.3}{33}}
+\citation{Thorup01}
+\citation{Thorup01}
+\newlabel{lemma:routingsize}{{6.4}{34}}
+\@writefile{toc}{\contentsline {paragraph}{Decoding}{34}}
+\citation{Green14}
+\citation{Thorup01}
+\citation{fraigniaud2002space}
+\citation{Fraigniaud01}
+\bibstyle{ACM-Reference-Format-Journals}
+\bibdata{lit}
+\bibcite{Alstrup06}{\citeauthoryear {Abiteboul, Alstrup, Kaplan, Milo, and Rauhe}{Abiteboul et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{2006}}
+\bibcite{Kaplan01}{\citeauthoryear {Abiteboul, Kaplan, and Milo}{Abiteboul et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{2001}}
+\bibcite{abraham2010hub}{\citeauthoryear {Abraham, Delling, Goldberg, and Werneck}{Abraham et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{2010}}
+\bibcite{abraham2012hierarchical}{\citeauthoryear {Abraham, Delling, Goldberg, and Werneck}{Abraham et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{2012}}
+\bibcite{abraham2006routing}{\citeauthoryear {Abraham, Gavoille, Goldberg, and Malkhi}{Abraham et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{2006}}
+\bibcite{abraham2004compact}{\citeauthoryear {Abraham, Gavoille, Malkhi, Nisan, and Thorup}{Abraham et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{2004}}
+\bibcite{abraham2005name}{\citeauthoryear {Abraham and Malkhi}{Abraham and Malkhi}{2005}}
+\@writefile{toc}{\contentsline {paragraph}{Implications}{35}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.4}Fixed Port Model}{35}}
+\newlabel{sec:ThorupZwickFixedPort}{{6.4}{35}}
+\newlabel{thm:routing-upper-fixed}{{6.5}{35}}
+\bibcite{adjiashvili2014labeling}{\citeauthoryear {Adjiashvili and Rotbart}{Adjiashvili and Rotbart}{2014}}
+\bibcite{aho}{\citeauthoryear {Aho, Hopcroft, and Ullman}{Aho et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{1973}}
+\bibcite{Alstrup05}{\citeauthoryear {Alstrup, Bille, and Rauhe}{Alstrup et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{2005}}
+\bibcite{Green14}{\citeauthoryear {Alstrup, Bistrup\nobreakspace  {}Halvorsen, and Green\nobreakspace  {}Larsen}{Alstrup et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{2014}}
+\bibcite{alstrup2015optimal}{\citeauthoryear {Alstrup, Dahlgaard, and Knudsen}{Alstrup et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{2015}}
+\bibcite{Alstrup02NCA}{\citeauthoryear {Alstrup, Gavoille, Kaplan, and Rauhe}{Alstrup et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{2002}}
+\bibcite{alstrup1997finding}{\citeauthoryear {Alstrup, Laurdisen, Sommerland, and Thorup}{Alstrup et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{1997}}
+\bibcite{Alstrup02}{\citeauthoryear {Alstrup and Rauhe}{Alstrup and Rauhe}{2002}}
+\bibcite{BCLR}{\citeauthoryear {Bhatt, Graham\nobreakspace  {}Chung, Leighton, and Rosenberg}{Bhatt et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{1989}}
+\bibcite{Esben13}{\citeauthoryear {Bistrup\nobreakspace  {}Halvorsen}{Bistrup\nobreakspace  {}Halvorsen}{2013}}
+\bibcite{blin2010fast}{\citeauthoryear {Blin, Dolev, Potop-Butucaru, and Rovedakis}{Blin et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{2010}}
+\bibcite{Gavoille06}{\citeauthoryear {Bonichon, Gavoille, and Labourel}{Bonichon et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{2006}}
+\bibcite{Breuer67}{\citeauthoryear {Breuer and Folkman}{Breuer and Folkman}{1967}}
+\bibcite{caminiti2009informative}{\citeauthoryear {Caminiti, Finocchi, and Petreschi}{Caminiti et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{2009}}
+\bibcite{chen1994short}{\citeauthoryear {Chen, Matsumoto, Wang, Zhang, and Zhang}{Chen et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{1994}}
+\bibcite{chung1989separator}{\citeauthoryear {Chung}{Chung}{1989}}
+\bibcite{Cohen02}{\citeauthoryear {Cohen, Kaplan, and Milo}{Cohen et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{2002}}
+\bibcite{cohen10journal}{\citeauthoryear {Cohen, Kaplan, and Milo}{Cohen et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{2010a}}
+\bibcite{cohen2010labeling}{\citeauthoryear {Cohen, Kaplan, and Milo}{Cohen et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{2010b}}
+\bibcite{Cormen01}{\citeauthoryear {Cormen, Stein, Rivest, and Leiserson}{Cormen et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{2001}}
+\bibcite{courcelle2007forbidden}{\citeauthoryear {Courcelle, Gavoille, Kant{\'e}, and Twigg}{Courcelle et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{2007}}
+\bibcite{cover2012elements}{\citeauthoryear {Cover and Thomas}{Cover and Thomas}{2012}}
+\bibcite{knudsen2014private}{\citeauthoryear {Dahlgaard, Knudsen, and Rotbart}{Dahlgaard et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{2014a}}
+\bibcite{dahlgaard2014dynamic}{\citeauthoryear {Dahlgaard, Knudsen, and Rotbart}{Dahlgaard et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{2014b}}
+\bibcite{dahlgaard2014improved}{\citeauthoryear {Dahlgaard, Knudsen, and Rotbart}{Dahlgaard et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{2014c}}
+\bibcite{Dom07}{\citeauthoryear {Dom}{Dom}{2007}}
+\bibcite{Fischer09}{\citeauthoryear {Fischer}{Fischer}{2009}}
+\bibcite{Fraigniaud01}{\citeauthoryear {Fraigniaud and Gavoille}{Fraigniaud and Gavoille}{2001}}
+\bibcite{fraigniaud2002space}{\citeauthoryear {Fraigniaud and Gavoille}{Fraigniaud and Gavoille}{2002}}
+\bibcite{fraigniaud2009}{\citeauthoryear {Fraigniaud and Korman}{Fraigniaud and Korman}{2009}}
+\bibcite{Fraigniaud10}{\citeauthoryear {Fraigniaud and Korman}{Fraigniaud and Korman}{2010a}}
+\bibcite{Korman10}{\citeauthoryear {Fraigniaud and Korman}{Fraigniaud and Korman}{2010b}}
+\bibcite{freedman2016optimal}{\citeauthoryear {Freedman, Gawrychowski, Nicholson, and Weimann}{Freedman et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{2016}}
+\bibcite{gabow}{\citeauthoryear {Gabow, Bentley, and Tarjan}{Gabow et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{1984}}
+\bibcite{gavoille2001routing}{\citeauthoryear {Gavoille}{Gavoille}{2001}}
+\bibcite{gavoille2001space}{\citeauthoryear {Gavoille and Gengler}{Gavoille and Gengler}{2001}}
+\bibcite{Katz00}{\citeauthoryear {Gavoille, Katz, Katz, Paul, and Peleg}{Gavoille et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{2000}}
+\bibcite{gavoille07}{\citeauthoryear {Gavoille and Labourel}{Gavoille and Labourel}{2007a}}
+\bibcite{gavoille2007shorter}{\citeauthoryear {Gavoille and Labourel}{Gavoille and Labourel}{2007b}}
+\bibcite{Paul01}{\citeauthoryear {Gavoille and Paul}{Gavoille and Paul}{2001}}
+\bibcite{Peleg03}{\citeauthoryear {Gavoille and Peleg}{Gavoille and Peleg}{2003}}
+\bibcite{Gavoille2001}{\citeauthoryear {Gavoille, Peleg, P{\'e}rennes, and Raz}{Gavoille et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{2001}}
+\bibcite{gavoillea2004distance}{\citeauthoryear {Gavoille, Peleg, P{\'e}rennesc, and Razb}{Gavoille et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{2004}}
+\bibcite{gavoille96}{\citeauthoryear {Gavoille and P{\'e}renn{\`e}s}{Gavoille and P{\'e}renn{\`e}s}{1996}}
+\bibcite{ghaleb2013novel}{\citeauthoryear {Ghaleb and Mohammed}{Ghaleb and Mohammed}{2013}}
+\bibcite{harder2007node}{\citeauthoryear {H{\"a}rder, Haustein, Mathis, and Wagner}{H{\"a}rder et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{2007}}
+\bibcite{hareltarjan}{\citeauthoryear {Harel and Tarjan}{Harel and Tarjan}{1984}}
+\bibcite{jordan1869assemblages}{\citeauthoryear {Jordan}{Jordan}{1869}}
+\bibcite{Kannan92}{\citeauthoryear {Kannan, Naor, and Rudich}{Kannan et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{1992}}
+\bibcite{Kano07}{\citeauthoryear {Kao, Li, and Wang}{Kao et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{2007}}
+\bibcite{kaplan2002comparison}{\citeauthoryear {Kaplan, Milo, and Shabo}{Kaplan et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{2002}}
+\bibcite{katz2004labeling}{\citeauthoryear {Katz, Katz, Korman, and Peleg}{Katz et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{2004}}
+\bibcite{korman2008improved}{\citeauthoryear {Korman}{Korman}{2008}}
+\bibcite{Korman07K}{\citeauthoryear {Korman and Kutten}{Korman and Kutten}{2007}}
+\bibcite{korman2006dynamic}{\citeauthoryear {Korman and Peleg}{Korman and Peleg}{2006}}
+\bibcite{korman2007compact}{\citeauthoryear {Korman and Peleg}{Korman and Peleg}{2007}}
+\bibcite{Rodeh10}{\citeauthoryear {Korman, Peleg, and Rodeh}{Korman et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{2010}}
+\bibcite{krioukov2007compact}{\citeauthoryear {Krioukov, Fall, Brady, et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{Krioukov et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{2007}}
+\bibcite{krioukov2004compact}{\citeauthoryear {Krioukov, Fall, and Yang}{Krioukov et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{2004}}
+\bibcite{lewenstein2013succinct}{\citeauthoryear {Lewenstein, Munro, and Raman}{Lewenstein et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{2013}}
+\bibcite{li2005qed}{\citeauthoryear {Li and Ling}{Li and Ling}{2005}}
+\bibcite{lu2013xml}{\citeauthoryear {Lu}{Lu}{2013}}
+\bibcite{lu2005region}{\citeauthoryear {Lu, Ling, Chan, and Chen}{Lu et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{2005}}
+\bibcite{Muller1988}{\citeauthoryear {Muller}{Muller}{1988}}
+\bibcite{nash1961edge}{\citeauthoryear {Nash-Williams}{Nash-Williams}{1961}}
+\bibcite{o2012scooter}{\citeauthoryear {OConnor and Roantree}{OConnor and Roantree}{2012}}
+\bibcite{o2004ordpaths}{\citeauthoryear {O'Neil, O'Neil, Pal, Cseri, Schaller, and Westbury}{O'Neil et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{2004}}
+\bibcite{peleg1999proximity}{\citeauthoryear {Peleg}{Peleg}{1999}}
+\bibcite{peleg2000informative}{\citeauthoryear {Peleg}{Peleg}{2000a}}
+\bibcite{Peleg00}{\citeauthoryear {Peleg}{Peleg}{2000b}}
+\bibcite{Peleg05}{\citeauthoryear {Peleg}{Peleg}{2005}}
+\bibcite{rado1964universal}{\citeauthoryear {Rado}{Rado}{1964}}
+\bibcite{Thorup01}{\citeauthoryear {Thorup and Zwick}{Thorup and Zwick}{2001}}
+\bibcite{wu2004prime}{\citeauthoryear {Wu, Lee, and Hsu}{Wu et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{2004}}
+\bibcite{xu2009dde}{\citeauthoryear {Xu, Ling, Wu, and Bao}{Xu et\nobreakspace  {}al\unhbox \voidb@x \hbox {.}}{2009}}
+\lastpage{39}
+\citation{Kannan92}
+\citation{Cormen01}
+\@writefile{toc}{\contentsline {section}{\numberline {A}Basic Definitions}{App--1}}
+\newlabel{AppendixA}{{A}{App--1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {A.1}Sets and Operations}{App--1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {A.2}Universal graphs}{App--1}}
+\newlabel{dfn:node-induced}{{A.2}{App--1}}
+\newlabel{dfn:universal}{{A.3}{App--1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {A.3}Probability}{App--1}}
+\newlabel{dfn:prob}{{A.4}{App--1}}
+\@writefile{toc}{\contentsline {section}{\numberline {B}Proof of the claim in Lemma\nobreakspace  {}4.1\hbox {}}{App--2}}
+\newlabel{AppendixB}{{B}{App--2}}
+\newlabel{eq:yep}{{2}{App--2}}
+\@writefile{toc}{\contentsline {section}{\numberline {C}Proof of the claim in Section\nobreakspace  {}4.3\hbox {}}{App--3}}
+\newlabel{AppendixC}{{C}{App--3}}
