@@ -72,7 +72,7 @@ We survey labeling  schemes supporting  the following functions for any  $u,v,w 
 	  \setlength{\itemsep}{2pt}
 	\item $\adjacency:(V \times V) \rightarrow \{\false,\true\}$ (Section~\ref{section:Adj})  			 \\ $\adjacency_T(u,v) = \true$ if and only if $u$ and $v$ are adjacent in $T$. \todo{It's totally ugly, in my opinion, that all these functions are slanted. Use $\backslash$operatorname or something.}
 	\item $\ancestry: (V \times V) \rightarrow \{\false,\true\}$    (Section~\ref{section:Anc})  		  \\ $\ancestry_T(u,v) = \true$ if and only if $u$ is an ancestor of $v$ in $T$.
-	\item $\NCA: (V \times V) \rightarrow \{ 0,1 \}^+$       (Section~\ref{section:NCA})  			\\  $\NCA_T(u,v)$ returns the label of the first node in common for the paths  $v \leadsto r $ and $u \leadsto r$ in $T$.  \todo{Do we need to define and point out the uniquess of ``$\leadsto$''?}
+	\item $\NCA: (V \times V) \rightarrow \{ 0,1 \}^+$       (Section~\ref{section:NCA})  			\\  $\NCA_T(u,v)$ returns the label of the first node in common for the unique paths  $v \leadsto r $ and $u \leadsto r$ in $T$. 
 	\item $\routing: (V \times V) \rightarrow \nat $        (Section~\ref{section:Routing})  					\\  $\routing_T(u,v)$ returns the port number (Definition~\ref{dfn:port}) leading to the next node on the  path  $u \leadsto v$ in $T$.
 	\end{enumerate}
 We also discuss the functions \nonadjacency and \nonancestry which are the negated functions of \adjacency and \ancestry. Each section contains a detailed literature overview,  as well as a report on one or more central results presented in some detail. Common for the algorithms presented is that, in most cases, they are  the best known results.
